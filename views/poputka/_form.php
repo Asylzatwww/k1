@@ -16,9 +16,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'timeToLive')->textInput() ?>
 
-    <?= $form->field($model, 'fromLocation')->textInput() ?>
+    <?= $form->field($model, 'fromLocation')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'toLocation')->textInput() ?>
+    <?= $form->field($model, 'toLocation')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

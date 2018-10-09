@@ -18,7 +18,8 @@ class PoputkaSearch extends Poputka
     public function rules()
     {
         return [
-            [['id', 'seats', 'timeToLive', 'fromLocation', 'toLocation'], 'integer'],
+            [['id', 'seats', 'timeToLive'], 'integer'],
+            [['fromLocation', 'toLocation'], 'safe'],
         ];
     }
 
@@ -61,9 +62,10 @@ class PoputkaSearch extends Poputka
             'id' => $this->id,
             'seats' => $this->seats,
             'timeToLive' => $this->timeToLive,
-            'fromLocation' => $this->fromLocation,
-            'toLocation' => $this->toLocation,
         ]);
+
+        $query->andFilterWhere(['like', 'fromLocation', $this->fromLocation])
+            ->andFilterWhere(['like', 'toLocation', $this->toLocation]);
 
         return $dataProvider;
     }

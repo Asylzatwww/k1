@@ -10,8 +10,8 @@ use Yii;
  * @property integer $id
  * @property integer $seats
  * @property integer $timeToLive
- * @property integer $fromLocation
- * @property integer $toLocation
+ * @property string $fromLocation
+ * @property string $toLocation
  */
 class Poputka extends \yii\db\ActiveRecord
 {
@@ -30,7 +30,8 @@ class Poputka extends \yii\db\ActiveRecord
     {
         return [
             [['seats', 'timeToLive', 'fromLocation', 'toLocation'], 'required'],
-            [['seats', 'timeToLive', 'fromLocation', 'toLocation'], 'integer'],
+            [['seats', 'timeToLive'], 'integer'],
+            [['fromLocation', 'toLocation'], 'string', 'max' => 300],
         ];
     }
 
