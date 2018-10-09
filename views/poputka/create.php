@@ -18,6 +18,5 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
     ]) ?>
 
-    <input id="searchTextField" type="text" size="50" placeholder="Enter a location" autocomplete="on">
 
 </div>
