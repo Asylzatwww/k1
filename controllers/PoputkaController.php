@@ -45,7 +45,10 @@ class PoputkaController extends Controller
     }
 
     public function actionJson(){
-        echo '{"data":"1"}';
+        //echo '{"data":"1"}';
+        $searchModel = new PoputkaSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        var_dump($dataProvider);
     }
 
     /**
