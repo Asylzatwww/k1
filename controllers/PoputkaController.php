@@ -46,12 +46,13 @@ class PoputkaController extends Controller
 
     public function actionJson(){
         //echo '{"data":"1"}';
+        \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+
         $searchModel = new PoputkaSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        var_dump($dataProvider);
+        //var_dump($dataProvider);
+        return $dataProvider;
 
-        $model = new Poputka();
-        CJSON::encode($model->findAll());
 
 
     }
