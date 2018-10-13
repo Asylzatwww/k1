@@ -50,15 +50,10 @@ class PoputkaController extends Controller
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         var_dump($dataProvider);
 
-
-        $models = Poputka::model()->findAll();
-
-        CJSON::encode($models);
+        $model = new Poputka();
+        CJSON::encode($model->findAll());
 
 
-        $model = Poputka::model()->find();
-
-        CJSON::encode($model);
     }
 
     /**
