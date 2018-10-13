@@ -39,13 +39,13 @@ $config = [
         ],
         'db' => require(__DIR__ . '/db.php'),
 
-        'urlManager' => [
+        /*'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
                 ['class'=>'yii\rest\UrlRule', 'controller'=>'Poput']
             ],
-        ],
+        ],*/
 
     ],
     'params' => $params,
