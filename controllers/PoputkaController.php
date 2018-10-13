@@ -51,12 +51,12 @@ class PoputkaController extends Controller
         var_dump($dataProvider);
 
 
-        $models = Post::model()->findAll();
+        $models = Poputka::model()->findAll();
 
         CJSON::encode($models);
 
 
-        $model = Post::model()->find();
+        $model = Poputka::model()->find();
 
         CJSON::encode($model);
     }
