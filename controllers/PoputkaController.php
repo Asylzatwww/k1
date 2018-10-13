@@ -44,6 +44,10 @@ class PoputkaController extends Controller
         ]);
     }
 
+    public function actionJson(){
+        echo '{"data":"1"}';
+    }
+
     /**
      * Displays a single Poputka model.
      * @param integer $id
