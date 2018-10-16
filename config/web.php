@@ -10,6 +10,9 @@ $config = [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => '7275444f47a6281619c35cf53ec6bb72',
+            'parsers' => [
+                'application/json' => 'yii\web\JsonParser',
+            ],
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -46,14 +49,14 @@ $config = [
                 ['class'=>'yii\rest\UrlRule', 'controller'=>'Poput']
             ],
         ],*/
-        'urlManager' => [
+        /*'urlManager' => [
             'enablePrettyUrl' => true,
             'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
                 ['class' => 'yii\rest\UrlRule', 'controller' => 'poput'],
             ],
-        ],
+        ],*/
 
     ],
     'params' => $params,
