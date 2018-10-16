@@ -78,7 +78,7 @@ class User extends \yii\db\ActiveRecord
      */
     public static function findByUsername($username)
     {
-        foreach (self::$users as $user) {
+        foreach (self as $user) {
             if (strcasecmp($user['username'], $username) === 0) {
                 return new static($user);
             }
