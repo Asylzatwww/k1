@@ -79,7 +79,7 @@ class User extends \yii\db\ActiveRecord
     public static function findByUsername($username)
     {
         foreach (self as $user) {
-            var_dump($user->username);
+            var_dump($user->username);var_dump("dsadasdas");
             if (strcasecmp($user->username, $username) === 0) {
                 return new static($user);
             }
