@@ -37,11 +37,12 @@ class PoputkaController extends Controller
     {
         $searchModel = new PoputkaSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        var_dump($searchModel);
 
-        return $this->render('index', [
+        /*return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
-        ]);
+        ]);*/
     }
 
     public function actionJson(){
