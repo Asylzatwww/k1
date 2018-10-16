@@ -2,51 +2,15 @@
 
 namespace app\models;
 
-use Yii;
-
-/**
- * This is the model class for table "user".
- *
- * @property integer $id
- * @property string $username
- * @property string $password
- * @property string $authKey
- * @property string $accessToken
- */
-class User extends \yii\db\ActiveRecord
+class UserAuth extends User
 {
-    /**
-     * @inheritdoc
-     */
-    public static function tableName()
-    {
-        return 'user';
-    }
+    public $id;
+    public $username;
+    public $password;
+    public $authKey;
+    public $accessToken;
 
-    /**
-     * @inheritdoc
-     */
-    public function rules()
-    {
-        return [
-            [['username', 'password', 'authKey', 'accessToken'], 'required'],
-            [['username', 'password', 'authKey', 'accessToken'], 'string', 'max' => 300],
-        ];
-    }
 
-    /**
-     * @inheritdoc
-     */
-    public function attributeLabels()
-    {
-        return [
-            'id' => 'ID',
-            'username' => 'Username',
-            'password' => 'Password',
-            'authKey' => 'Auth Key',
-            'accessToken' => 'Access Token',
-        ];
-    }
 
     /**
      * @inheritdoc
@@ -78,9 +42,8 @@ class User extends \yii\db\ActiveRecord
      */
     public static function findByUsername($username)
     {
-        foreach (self as $user) {
-            var_dump($user->username);
-            if (strcasecmp($user->username, $username) === 0) {
+        foreach (self::$users as $user) {
+            if (strcasecmp($user['username'], $username) === 0) {
                 return new static($user);
             }
         }
@@ -122,5 +85,4 @@ class User extends \yii\db\ActiveRecord
     {
         return $this->password === $password;
     }
-
 }
