@@ -29,7 +29,7 @@ class PoputController extends ActiveController
 
     public function actionSearch()
     {
-        if (!empty($_GET)) {
+        /*if (!empty($_GET)) {
             $model = new $this->modelClass;
             foreach ($_GET as $key => $value) {
                 if (!$model->hasAttribute($key)) {
@@ -52,11 +52,11 @@ class PoputController extends ActiveController
             }
         } else {
             throw new \yii\web\HttpException(400, 'There are no query string');
-        }
+        }*/
 
         $model = new $this->modelClass;
         $provider = new ActiveDataProvider([
-            'query' => $model->find()->where(["id"=>"1"]),
+            'query' => $model->find()->where(["id"=>1]),
             'pagination' => false
         ]);
 
