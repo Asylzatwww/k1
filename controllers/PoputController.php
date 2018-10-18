@@ -9,7 +9,6 @@
 namespace app\controllers;
 
 use yii\rest\ActiveController;
-use app\models\PoputkaSearch;
 use yii\data\ActiveDataProvider;
 
 
@@ -40,23 +39,6 @@ class PoputController extends ActiveController
 
         return $provider;
     }
-
-    public function actionIndex()
-    {
-        /*$searchModel = new PoputkaSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        var_dump($searchModel);*/
-        $model = new $this->modelClass;
-        $provider = new ActiveDataProvider([
-            'query' => $model->find()->where(["id"=>1]),
-            'pagination' => false
-        ]);
-
-        return $provider;
-
-
-    }
-
 
 
 }

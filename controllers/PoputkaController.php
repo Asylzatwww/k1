@@ -56,8 +56,7 @@ class PoputkaController extends Controller
         */
 
         return '
-        {
-    "contacts": [
+[
         {
                 "id": "c200",
                 "name": "Ravi Tamada",
@@ -215,7 +214,7 @@ class PoputkaController extends Controller
                 }
         }
     ]
-}
+
         ';
 
 
