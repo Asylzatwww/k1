@@ -55,7 +55,9 @@ class PoputkaController extends Controller
         return $dataProvider;
         */
 
-        return '[
+        return '
+        {
+    "contacts": [
         {
                 "id": "c200",
                 "name": "Ravi Tamada",
@@ -79,20 +81,10 @@ class PoputkaController extends Controller
                     "home": "00 000000",
                     "office": "00 000000"
                 }
-        },
-        {
-                "id": "c202",
-                "name": "Leonardo Dicaprio",
-                "email": "leonardo_dicaprio@gmail.com",
-                "address": "xx-xx-xxxx,x - street, x - country",
-                "gender" : "male",
-                "phone": {
-                    "mobile": "+91 0000000000",
-                    "home": "00 000000",
-                    "office": "00 000000"
-                }
         }
-    ]';
+    ]
+}
+        ';
 
 
 
