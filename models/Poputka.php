@@ -29,6 +29,7 @@ class Poputka extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['toLocation'], 'required'],
             //[['seats', 'timeToLive', 'fromLocation', 'toLocation'], 'required'],
             [['seats', 'timeToLive'], 'integer'],
             [['fromLocation', 'toLocation'], 'string', 'max' => 300],
