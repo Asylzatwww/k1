@@ -82,8 +82,7 @@ UPDATE phoneactivation SET active="1" WHERE phone="0553106808"
 
         $model = Phone::find()->where(['phone'=> $phone])->one();
 
-        if($model->money):
-
+        if($model == null) {
 
 
             $connection->createCommand('
@@ -97,24 +96,24 @@ UPDATE phoneactivation SET active="1" WHERE phone="0553106808"
 
     ', [':phone' => $phone])->execute();
 
+        }
+        else
+            {
+
+                $connection->createCommand("
+
+UPDATE phone SET money=:money+
+          IFNULL(
+             (SELECT SUM(CAST(SUBSTRING(money,27,8) AS DECIMAL(5,2)))
+                FROM phoneactivation WHERE phone=\"0553106808\" AND active=\"0\")
+              ,0)
+           
+     WHERE phone=:phone
+
+    ", [':phone' => $phone, ':money' => $model->money])->execute();
 
 
-
-        endif;
-
-
-
-
-
-        $connection->createCommand("
-
-UPDATE phone SET money=(
-             SELECT SUM(CAST(SUBSTRING(money,27,8) AS DECIMAL(5,2)))
-                FROM phoneactivation WHERE phone=:phone AND active=\"0\"
-    ) WHERE phone=:phone
-
-    ", [':phone' => $phone])->execute();
-
+            }
 
 
         $connection->createCommand("
