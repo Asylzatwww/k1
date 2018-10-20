@@ -11,7 +11,7 @@ namespace app\controllers;
 use yii;
 use yii\rest\ActiveController;
 use yii\data\ActiveDataProvider;
-use app\models\Phoneactivation;
+use app\models\Phone;
 
 
 class PhoneactivController extends ActiveController
@@ -80,7 +80,7 @@ UPDATE phoneactivation SET active="1" WHERE phone="0553106808"
 
 
 
-        $model = Phoneactivation::find()->where(['phone'=> $phone])->count();
+        $model = Phone::find()->where(['phone'=> $phone])->count();
 
         if($model == 0):
 
@@ -116,14 +116,14 @@ UPDATE phone SET money=(
     ", [':phone' => $phone])->execute();
 
 
-/*
+
         $connection->createCommand("
 
 UPDATE phoneactivation SET active=\"1\" WHERE phone=:phone
 
     ", [':phone' => $phone])->execute();
 
-*/
+
 
 
 
