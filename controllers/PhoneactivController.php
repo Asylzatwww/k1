@@ -11,6 +11,7 @@ namespace app\controllers;
 use yii;
 use yii\rest\ActiveController;
 use yii\data\ActiveDataProvider;
+use app\models\Phoneactivation;
 
 
 class PhoneactivController extends ActiveController
@@ -51,31 +52,6 @@ class PhoneactivController extends ActiveController
      *
      *
      *
-
-
-    SELECT IF ( (SELECT COUNT(phone) FROM phoneactivation WHERE phone="0553106808" AND active="0") > 0,
-           (SELECT IF ( (SELECT COUNT(phone) FROM phone WHERE phone="0553106808") > 0,
-
-                      (
-                          UPDATE phone SET money=(
-                          	SELECT CONVERT(SUBSTRING(money,27,5),UNSIGNED INTEGER) AS num FROM 											phoneactivation WHERE phone="0553106808" AND active="0"
-                      	) WHERE phone="0553106808"
-                      ),
-                      (INSERT INTO phone (phone, money) VALUES("0553106808",
-                                              (
-                                                 SELECT CONVERT(SUBSTRING(money,27,5),UNSIGNED INTEGER) AS num 													FROM phoneactivation WHERE phone="0553106808" AND active="0"
-                                              )
-                                                              )
-                     )
-             ),
-           "No"
-          )
-     *
-
-
-
-
-
 
 
 INSERT INTO phone (phone, money) VALUES("0553106808",
