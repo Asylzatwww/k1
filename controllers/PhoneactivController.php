@@ -89,8 +89,8 @@ UPDATE phoneactivation SET active="1" WHERE phone="0553106808"
 
     INSERT INTO phone (phone, money) VALUES(:phone,
           IFNULL(
-             SELECT SUM(CAST(SUBSTRING(money,27,8) AS DECIMAL(5,2)))
-                FROM phoneactivation WHERE phone=:phone AND active="0"
+             (SELECT SUM(CAST(SUBSTRING(money,27,8) AS DECIMAL(5,2)))
+                FROM phoneactivation WHERE phone=:phone AND active="0")
           ,0)
       )
 
