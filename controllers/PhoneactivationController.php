@@ -44,7 +44,7 @@ class PhoneactivationController extends Controller
 
 
 
-        $model = Phoneactivation::find()->where('=', 'phone', '0553106808')->one();
+        $model = Phoneactivation::find()->where(['phone'=> '0553106808'])->one();
 
         if(!$model):
 
