@@ -80,9 +80,9 @@ UPDATE phoneactivation SET active="1" WHERE phone="0553106808"
 
 
 
-        $model = Phoneactivation::find()->where(['phone'=> '0553106808'])->one();
+        $model = Phoneactivation::find()->where(['phone'=> $phone])->count();
 
-        if(!$model):
+        if($model == 0):
 
 
 
@@ -116,14 +116,14 @@ UPDATE phone SET money=(
     ", [':phone' => $phone])->execute();
 
 
-
+/*
         $connection->createCommand("
 
 UPDATE phoneactivation SET active=\"1\" WHERE phone=:phone
 
     ", [':phone' => $phone])->execute();
 
-
+*/
 
 
 
