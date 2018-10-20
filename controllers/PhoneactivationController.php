@@ -59,9 +59,9 @@ class PhoneactivationController extends Controller
           )
       )
 
-    ', [':phone' => '0553106808']);
+    ', [':phone' => '0553106808'])->execute();
 
-            $result = $command->queryAll();
+            //$result = $command->queryAll();
 
 
 
@@ -78,16 +78,16 @@ UPDATE phone SET money=(
                 FROM phoneactivation WHERE phone=:phone AND active=\"0\"
     ) WHERE phone=:phone
 
-    ", [':phone' => '0553106808']);
+    ", [':phone' => '0553106808'])->execute();
 
-        $command->queryAll();
+        //$command->queryAll();
 
 
         $command = $connection->createCommand("
 
 UPDATE phoneactivation SET active=\"1\" WHERE phone=:phone
 
-    ", [':phone' => '0553106808']);
+    ", [':phone' => '0553106808'])->execute();
 
         //$result = $command->queryAll();
 
