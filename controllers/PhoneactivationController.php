@@ -80,7 +80,7 @@ UPDATE phone SET money=(
 
     ", [':phone' => '0553106808']);
 
-        //$result = $command->queryAll();
+        $command->queryAll();
 
 
         $command = $connection->createCommand("
