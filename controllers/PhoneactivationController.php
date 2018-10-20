@@ -59,7 +59,7 @@ class PhoneactivationController extends Controller
           )
       )
 
-    ', [':phone' => '0553106808'])->queryOne();
+    ')->bindValues([':phone' => '0553106808'])->queryOne();
 
 
 
@@ -77,7 +77,7 @@ UPDATE phone SET money=(
                 FROM phoneactivation WHERE phone=:phone AND active="0"
     ) WHERE phone=:phone
 
-    ', [':phone' => '0553106808'])->queryOne();
+    ')->bindValues([':phone' => '0553106808'])->queryOne();
 
 
 
@@ -85,7 +85,7 @@ UPDATE phone SET money=(
 
 UPDATE phoneactivation SET active="1" WHERE phone=:phone
 
-    ', [':phone' => '0553106808'])->queryOne();
+    ')->bindValues([':phone' => '0553106808'])->queryOne();
 
 
 
