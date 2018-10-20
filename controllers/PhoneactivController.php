@@ -12,7 +12,7 @@ use yii\rest\ActiveController;
 use yii\data\ActiveDataProvider;
 
 
-class PhoneActivController extends ActiveController
+class PhoneactivController extends ActiveController
 {
 
 
