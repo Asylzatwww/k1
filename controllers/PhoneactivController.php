@@ -18,7 +18,7 @@ class PhoneactivController extends ActiveController
 {
 
 
-    public $modelClass ='app\models\Phoneactivation';
+    public $modelClass ='app\models\Phone';
 
     protected function verbs()
     {
@@ -95,7 +95,7 @@ UPDATE phoneactivation SET active="1" WHERE phone="0553106808"
           )
       )
 
-    ', [':phone' => '0553106808'])->execute();
+    ', [':phone' => $phone])->execute();
 
 
 
@@ -113,7 +113,7 @@ UPDATE phone SET money=(
                 FROM phoneactivation WHERE phone=:phone AND active=\"0\"
     ) WHERE phone=:phone
 
-    ", [':phone' => '0553106808'])->execute();
+    ", [':phone' => $phone])->execute();
 
 
 
@@ -121,7 +121,7 @@ UPDATE phone SET money=(
 
 UPDATE phoneactivation SET active=\"1\" WHERE phone=:phone
 
-    ", [':phone' => '0553106808'])->execute();
+    ", [':phone' => $phone])->execute();
 
 
 
