@@ -35,7 +35,7 @@ class PoputController extends ActiveController
         $provider = new ActiveDataProvider([
             'query' => $model->find()
                 //->where(["id"=>1])
-                ->orderBy(["id"=>SORT_ASC]),
+                ->orderBy(["id"=>SORT_DESC]),
             'pagination' => false
         ]);
 
