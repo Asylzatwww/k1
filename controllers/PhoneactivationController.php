@@ -37,6 +37,8 @@ class PhoneactivationController extends Controller
     {
 
 
+        $model = Phoneactivation::find()->where(['phone'=> "0553106808"])->count();
+        var_dump($model);
 
 
         $searchModel = new PhoneactivationSearch();
