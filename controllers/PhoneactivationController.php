@@ -48,7 +48,7 @@ class PhoneactivationController extends Controller
 
         if(!$model):
 
-
+/*
 
             $command = $connection->createCommand('
 
@@ -88,7 +88,16 @@ UPDATE phoneactivation SET active="1" WHERE phone=:phone
     ')->bindValues([':phone' => '0553106808'])->queryOne();
 
 
+*/
 
+
+
+            $connection = Yii::$app->getDb();
+            $command = $connection->createCommand("
+    SELECT phone FROM phoneactivation
+    ", [':start_date' => '1970-01-01']);
+
+            $result = $command->queryAll();
 
 
 
