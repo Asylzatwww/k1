@@ -41,7 +41,16 @@ class PhoneactivationController extends Controller
 
 
         $connection = Yii::$app->getDb();
-        $command = $connection->createCommand('
+
+
+
+        $model = Phoneactivation::find()->where('=', 'phone', '0553106808')->one();
+
+        if(!$model):
+
+
+
+            $command = $connection->createCommand('
 
     INSERT INTO phone (phone, money) VALUES(:phone,
           (
@@ -52,7 +61,13 @@ class PhoneactivationController extends Controller
 
     ', [':phone' => '0553106808']);
 
-        $result = $command->queryAll();
+            $result = $command->queryAll();
+
+
+
+        endif;
+
+
 
 
 
