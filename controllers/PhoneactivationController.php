@@ -40,7 +40,7 @@ class PhoneactivationController extends Controller
         $connection = Yii::$app->getDb();
 
 
-
+        $phone = "0553106808";
         $model = Phone::find()->where(['phone'=> $phone])->count();
 
         if($model == 0):
