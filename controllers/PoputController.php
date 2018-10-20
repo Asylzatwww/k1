@@ -33,7 +33,9 @@ class PoputController extends ActiveController
     {
         $model = new $this->modelClass;
         $provider = new ActiveDataProvider([
-            'query' => $model->find()->where(["id"=>1]),
+            'query' => $model->find()
+                //->where(["id"=>1])
+                ->orderBy("id"->"ASC"),
             'pagination' => false
         ]);
 

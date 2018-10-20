@@ -35,7 +35,7 @@ class Poputka extends \yii\db\ActiveRecord
             [['fromLocation', 'toLocation'], 'string', 'max' => 300],
         ];
     }
-
+//curl -d "seats=1&timeToLive=6" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://asylzatwww.beget.tech/index.php?r=poput/create
     /**
      * @inheritdoc
      */
