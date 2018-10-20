@@ -37,13 +37,50 @@ class PhoneactivationController extends Controller
     public function actionIndex()
     {
 
+
+
         $connection = Yii::$app->getDb();
 
 
-        $phone = "05531068088";
+
         $model = Phone::find()->where(['phone'=> $phone])->one();
 
-        if ($model != null) var_dump($model);else echo "Lost";
+        if($model == null) {
+
+
+            $connection->createCommand('
+
+    INSERT INTO phone (phone, money) VALUES(:phone,
+          (
+             SELECT SUM(CAST(SUBSTRING(money,27,8) AS DECIMAL(5,2)))
+                FROM phoneactivation WHERE phone=:phone AND active="0"
+          )
+      )
+
+    ', [':phone' => $phone])->execute();
+
+        }
+        else
+        {
+
+            $connection->createCommand("
+
+UPDATE phone SET money=:money+
+          IFNULL(
+             (SELECT SUM(CAST(SUBSTRING(money,27,8) AS DECIMAL(5,2)))
+                FROM phoneactivation WHERE phone=\"0553106808\" AND active=\"0\")
+              ,0)
+           
+     WHERE phone=:phone
+
+    ", [':phone' => $phone, ':money' => $model->money])->execute();
+
+
+        }
+
+
+
+
 
         $searchModel = new PhoneactivationSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
