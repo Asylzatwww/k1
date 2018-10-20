@@ -101,7 +101,16 @@ UPDATE phoneactivation SET active="1" WHERE phone="0553106808"
     {
 
         $connection = Yii::$app->getDb();
-        $command = $connection->createCommand('
+
+
+
+        $model = Phoneactivation::find()->where(['phone'=> '0553106808'])->one();
+
+        if(!$model):
+
+
+
+            $connection->createCommand('
 
     INSERT INTO phone (phone, money) VALUES(:phone,
           (
@@ -110,31 +119,33 @@ UPDATE phoneactivation SET active="1" WHERE phone="0553106808"
           )
       )
 
-    ', [':phone' => '0553106808']);
-
-        $result = $command->queryAll();
+    ', [':phone' => '0553106808'])->execute();
 
 
 
-        $command = $connection->createCommand('
+
+        endif;
+
+
+
+
+
+        $connection->createCommand("
 
 UPDATE phone SET money=(
              SELECT SUM(CAST(SUBSTRING(money,27,8) AS DECIMAL(5,2)))
-                FROM phoneactivation WHERE phone=:phone AND active="0"
+                FROM phoneactivation WHERE phone=:phone AND active=\"0\"
     ) WHERE phone=:phone
 
-    ', [':phone' => '0553106808']);
-
-        $result = $command->queryAll();
+    ", [':phone' => '0553106808'])->execute();
 
 
-        $command = $connection->createCommand('
 
-UPDATE phoneactivation SET active="1" WHERE phone=:phone
+        $connection->createCommand("
 
-    ', [':phone' => '0553106808']);
+UPDATE phoneactivation SET active=\"1\" WHERE phone=:phone
 
-        $result = $command->queryAll();
+    ", [':phone' => '0553106808'])->execute();
 
 
 

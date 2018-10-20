@@ -39,60 +39,6 @@ class PhoneactivationController extends Controller
 
 
 
-
-        $connection = Yii::$app->getDb();
-
-
-
-        $model = Phoneactivation::find()->where(['phone'=> '0553106808'])->one();
-
-        if(!$model):
-
-
-
-            $connection->createCommand('
-
-    INSERT INTO phone (phone, money) VALUES(:phone,
-          (
-             SELECT SUM(CAST(SUBSTRING(money,27,8) AS DECIMAL(5,2)))
-                FROM phoneactivation WHERE phone=:phone AND active="0"
-          )
-      )
-
-    ', [':phone' => '0553106808'])->execute();
-
-
-
-
-        endif;
-
-
-
-
-
-        $connection->createCommand("
-
-UPDATE phone SET money=(
-             SELECT SUM(CAST(SUBSTRING(money,27,8) AS DECIMAL(5,2)))
-                FROM phoneactivation WHERE phone=:phone AND active=\"0\"
-    ) WHERE phone=:phone
-
-    ", [':phone' => '0553106808'])->execute();
-
-
-
-        $connection->createCommand("
-
-UPDATE phoneactivation SET active=\"1\" WHERE phone=:phone
-
-    ", [':phone' => '0553106808'])->execute();
-
-
-
-
-
-
-
         $searchModel = new PhoneactivationSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
