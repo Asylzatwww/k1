@@ -43,8 +43,106 @@ class PhoneactivController extends ActiveController
         return $provider;
     }
 
+    /*
+     *
+     *
+     *
+     *
+     *
+     *
+
+
+    SELECT IF ( (SELECT COUNT(phone) FROM phoneactivation WHERE phone="0553106808" AND active="0") > 0,
+           (SELECT IF ( (SELECT COUNT(phone) FROM phone WHERE phone="0553106808") > 0,
+
+                      (
+                          UPDATE phone SET money=(
+                          	SELECT CONVERT(SUBSTRING(money,27,5),UNSIGNED INTEGER) AS num FROM 											phoneactivation WHERE phone="0553106808" AND active="0"
+                      	) WHERE phone="0553106808"
+                      ),
+                      (INSERT INTO phone (phone, money) VALUES("0553106808",
+                                              (
+                                                 SELECT CONVERT(SUBSTRING(money,27,5),UNSIGNED INTEGER) AS num 													FROM phoneactivation WHERE phone="0553106808" AND active="0"
+                                              )
+                                                              )
+                     )
+             ),
+           "No"
+          )
+     *
+
+
+
+
+
+
+
+INSERT INTO phone (phone, money) VALUES("0553106808",
+          (
+             SELECT SUM(CAST(SUBSTRING(money,27,8) AS DECIMAL(5,2)))
+                FROM phoneactivation WHERE phone="0553106808" AND active="0"
+          )
+      )
+
+UPDATE phone SET money=(
+             SELECT SUM(CAST(SUBSTRING(money,27,8) AS DECIMAL(5,2)))
+                FROM phoneactivation WHERE phone="0553106808" AND active="0"
+    ) WHERE phone="0553106808"
+
+
+UPDATE phoneactivation SET active="1" WHERE phone="0553106808"
+
+     *
+     * */
+
+
     public function actionPhone($phone)
     {
+
+        $connection = Yii::$app->getDb();
+        $command = $connection->createCommand('
+
+    INSERT INTO phone (phone, money) VALUES(:phone,
+          (
+             SELECT SUM(CAST(SUBSTRING(money,27,8) AS DECIMAL(5,2)))
+                FROM phoneactivation WHERE phone=:phone AND active="0"
+          )
+      )
+
+    ', [':phone' => '0553106808']);
+
+        $result = $command->queryAll();
+
+
+
+        $command = $connection->createCommand('
+
+UPDATE phone SET money=(
+             SELECT SUM(CAST(SUBSTRING(money,27,8) AS DECIMAL(5,2)))
+                FROM phoneactivation WHERE phone=:phone AND active="0"
+    ) WHERE phone=:phone
+
+    ', [':phone' => '0553106808']);
+
+        $result = $command->queryAll();
+
+
+        $command = $connection->createCommand('
+
+UPDATE phoneactivation SET active="1" WHERE phone=:phone
+
+    ', [':phone' => '0553106808']);
+
+        $result = $command->queryAll();
+
+
+
+
+
+
+
+
+
         $model = new $this->modelClass;
         $provider = new ActiveDataProvider([
             'query' => $model->find()
