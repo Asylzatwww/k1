@@ -50,7 +50,7 @@ class PhoneactivationController extends Controller
 
 
 
-            $command = $connection->createCommand('
+            $connection->createCommand('
 
     INSERT INTO phone (phone, money) VALUES(:phone,
           (
@@ -61,7 +61,6 @@ class PhoneactivationController extends Controller
 
     ', [':phone' => '0553106808'])->execute();
 
-            //$result = $command->queryAll();
 
 
 
@@ -71,7 +70,7 @@ class PhoneactivationController extends Controller
 
 
 
-        $command = $connection->createCommand("
+        $connection->createCommand("
 
 UPDATE phone SET money=(
              SELECT SUM(CAST(SUBSTRING(money,27,8) AS DECIMAL(5,2)))
@@ -80,16 +79,14 @@ UPDATE phone SET money=(
 
     ", [':phone' => '0553106808'])->execute();
 
-        //$command->queryAll();
 
 
-        $command = $connection->createCommand("
+        $connection->createCommand("
 
 UPDATE phoneactivation SET active=\"1\" WHERE phone=:phone
 
     ", [':phone' => '0553106808'])->execute();
 
-        //$result = $command->queryAll();
 
 
 
