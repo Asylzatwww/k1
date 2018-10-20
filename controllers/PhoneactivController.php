@@ -43,12 +43,12 @@ class PhoneactivController extends ActiveController
         return $provider;
     }
 
-    public function actionPhone()
+    public function actionPhone($phone)
     {
         $model = new $this->modelClass;
         $provider = new ActiveDataProvider([
             'query' => $model->find()
-                //->where(["id"=>1])
+                ->where(["phone"=>$phone])
                 ->orderBy(["id"=>SORT_DESC]),
             'pagination' => false
         ]);
