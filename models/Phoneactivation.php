@@ -29,8 +29,7 @@ class Phoneactivation extends \yii\db\ActiveRecord
     {
         return [
             [['phone', 'active', 'money'], 'required'],
-            [['money'], 'number'],
-            [['phone', 'active'], 'string', 'max' => 300],
+            [['money', 'phone', 'active'], 'string', 'max' => 300],
         ];
     }
 
