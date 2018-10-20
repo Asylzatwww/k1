@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use Yii;
+use app\models\Phone;
 use app\models\Phoneactivation;
 use app\models\PhoneactivationSearch;
 use yii\web\Controller;
