@@ -8,6 +8,7 @@
 
 namespace app\controllers;
 
+use yii;
 use yii\rest\ActiveController;
 use yii\data\ActiveDataProvider;
 
