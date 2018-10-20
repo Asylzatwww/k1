@@ -37,7 +37,13 @@ class PhoneactivationController extends Controller
     public function actionIndex()
     {
 
+        $connection = Yii::$app->getDb();
 
+
+        $phone = "0553106808";
+        $model = Phone::find()->where(['phone'=> $phone])->one();
+
+        if ($model != null) var_dump($model);else echo "Lost";
 
         $searchModel = new PhoneactivationSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
