@@ -55,7 +55,6 @@ $this->registerCss('
 
 
                 <form class="col-xs-12 col-sm-8 col-md-10 col-lg-8 col-sm-offset-2 col-md-offset-1 col-lg-offset-2" action="https://booking.touringcars.eu/" method="post" id="bookingform-form" accept-charset="UTF-8"><div><input type="hidden" name="departurePlaceName" value="null">
-                        <input type="hidden" name="returnPlaceName" value="null">
                         <input type="hidden" name="departureDate" value="null">
                         <input type="hidden" name="returnDate" value="null">
 
@@ -78,36 +77,6 @@ $this->registerCss('
                                                     </span>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-item form-item-departuretime form-type-select form-group formskin">
-                                        <label class="control-label" for="edit-departuretime">Время</label>
-                                        <div class="formskin-select">
-                                            <select class="form-control form-select formskin-processed" id="edit-departuretime" name="departureTime">
-                                                <option value="08:00">08:00</option>
-                                                <option value="08:30">08:30</option>
-                                                <option value="09:00">09:00</option>
-                                                <option value="09:30">09:30</option>
-                                                <option value="10:00">10:00</option>
-                                                <option value="10:30">10:30</option>
-                                                <option value="11:00">11:00</option>
-                                                <option value="11:30">11:30</option>
-                                                <option value="12:00">12:00</option>
-                                                <option value="12:30">12:30</option>
-                                                <option value="13:00">13:00</option>
-                                                <option value="13:30">13:30</option>
-                                                <option value="14:00">14:00</option>
-                                                <option value="14:30">14:30</option>
-                                                <option value="15:00">15:00</option>
-                                                <option value="15:30">15:30</option>
-                                                <option value="16:00">16:00</option>
-                                                <option value="16:50">16:30</option>
-                                                <option value="17:00">17:00</option>
-                                                <option value="17:30">17:30</option>
-                                                <option value="18:00">18:00</option>
-                                                <option value="18:30">18:30</option>
-                                            </select>
-                                            <span>08:00</span>
                                         </div>
                                     </div>
                                 </div>
@@ -133,43 +102,11 @@ $this->registerCss('
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-item form-item-returntime form-type-select form-group formskin">
-                                        <label class="control-label" for="edit-returntime">Время</label>
-                                        <div class="formskin-select">
-                                            <select class="form-control form-select formskin-processed" id="edit-returntime" name="returnTime">
-                                                <option value="08:00">08:00</option>
-                                                <option value="08:30">08:30</option>
-                                                <option value="09:00">09:00</option>
-                                                <option value="09:30">09:30</option>
-                                                <option value="10:00">10:00</option>
-                                                <option value="10:30">10:30</option>
-                                                <option value="11:00">11:00</option>
-                                                <option value="11:30">11:30</option>
-                                                <option value="12:00">12:00</option>
-                                                <option value="12:30">12:30</option>
-                                                <option value="13:00">13:00</option>
-                                                <option value="13:30">13:30</option>
-                                                <option value="14:00">14:00</option>
-                                                <option value="14:30">14:30</option>
-                                                <option value="15:00">15:00</option>
-                                                <option value="15:30">15:30</option>
-                                                <option value="16:00">16:00</option>
-                                                <option value="16:50">16:30</option>
-                                                <option value="17:00">17:00</option>
-                                                <option value="17:30">17:30</option>
-                                                <option value="18:00">18:00</option>
-                                                <option value="18:30">18:30</option>
-                                            </select>
-                                            <span>08:00</span>
-                                        </div>
-                                    </div>
                                 </div>
                             </fieldset>
                         </div>
                         <button type="submit" id="edit-submit--2" name="op" value="ЗАКАЗАТЬ ПРЯМО СЕЙЧАС" class="btn btn-default form-submit">
                             ЗАКАЗАТЬ ПРЯМО СЕЙЧАС</button>
-                        <input type="hidden" name="form_build_id" value="form-5GxMFLU_oHlfIqApbUk0YI2O0L1A6_zGQnHDI0P9Ar8">
-                        <input type="hidden" name="form_id" value="bookingform_form">
                     </div>
                 </form>
             </section>
@@ -185,10 +122,7 @@ $this->registerCss('
             <div class="region region-content">
                 <section id="block-views-summary-block" class="block block-views container clearfix">
 
-
                     <div class="view view-summary view-id-summary view-display-id-block view-dom-id-1e10ef4d941a116016a1e351d572ea08">
-
-
 
                         <div class="view-content">
                             <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
@@ -202,11 +136,9 @@ $this->registerCss('
                             </div>
                         </div>
 
-
                     </div>
                 </section>
                 <section id="block-system-main" class="block block-system clearfix">
-
 
                     <div id="node-163" class="node node-page clearfix" about="" typeof="foaf:Document">
 
@@ -220,7 +152,6 @@ $this->registerCss('
 
                 </section>
                 <section id="block-block-7" class="block block-block text-center container clearfix">
-
 
                     <h1>Аренда дома на колесах в кыргызстане</h1>
                     <h2>Аренда автодома &nbsp;в Бишкеке</h2>
@@ -238,14 +169,11 @@ $this->registerCss('
                 </section>
                 <section id="block-block-6" class="block block-block clearfix">
 
-
                     <p class="rtecenter"><a class="button blue" href="/holiday-ideas#offers">
                             Просмотрите специальные предложения</a></p>
 
                 </section>
-                <section id="block-views-destinations-block" class="block block-views masonry-block masonry clearfix"
-                         style="position: relative; width: 1200px; height: 2400px; visibility: visible; display: block;">
-
+                <section id="block-views-destinations-block" class="block block-views masonry-block masonry clearfix">
 
                     <div class="view view-destinations view-id-destinations view-display-id-block view-dom-id-fcc1ca96c43c4b4ef1949825d686a2ee">
 
