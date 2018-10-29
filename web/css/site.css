@@ -121,7 +121,7 @@ body .navbar-inverse {
     border: 0px solid white;
 }
 
-body .navbar-nav > li > a {
+body .navbar-nav > li {
     padding-top: 25px;
     padding-bottom: 25px;
 }
