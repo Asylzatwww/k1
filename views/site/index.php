@@ -48,7 +48,7 @@ $this->registerCss('
             <section id="block-block-5" class="block block-block container text-center clearfix">
 
 
-                <p class="rtecenter"><img alt="Change your backyard every day" src="../css/change-your-backyard-every-day-touringcars.png" style="height:231px; width:494px"></p>
+                <p class="rtecenter"><img alt="Change your backyard every day" src="../img/change-your-backyard-every-day-touringcars.png" style="height:231px; width:494px"></p>
 
             </section>
             <section id="block-booking-bookingblock" class="block block-booking container clearfix">
