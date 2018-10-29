@@ -66,9 +66,16 @@ AppAsset::register($this);
 </div>
 
 <footer class="footer">
+
+    <div class="container">
+        <h2 class="block-title">САМАЯ КРУПНАЯ КОМПАНИЯ ПО АРЕНДЕ КЕМПЕРОВ В СЕВЕРНОЙ ЕВРОПЕ</h2>
+        <p class="rtecenter">Компания Touring Cars - ведущий поставщик кемперов для путешествия по Северной Европе. Имея свыше 34 лет опыта, мы сдаем в аренду качественные дома на колесах и поддерживаем высокие стандарты в работе с клиентами в Исландии, Норвегии, Швеции, Финляндии и Эстонии. Качество сервиса компании Touring Cars гарантированно всегда!</p>
+        <p class="rtecenter">Sales Office: +358 (9) 849 4050<br><a href="mailto:info@touringcars.eu">info@touringcars.eu</a></p>
+    </div>
+
+
     <div class="container">
         <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-        <p>class</p>
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
 </footer>
