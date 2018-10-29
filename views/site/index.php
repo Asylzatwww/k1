@@ -125,14 +125,14 @@ $this->registerCss('
                         <div class="view-content">
                             <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
 
-                                <div class="views-field views-field-nothing col-xs-12 col-sm-3 col-md-5 pull-right">        <span class="field-content"><a href="#setups" class="button bw">Setups</a>
-<a href="#" class="button bw">Best routes</a>
-<a href="#" class="button bw">Destinations</a></span>  </div>  </div>
+                                <div class="views-field views-field-nothing col-xs-12 col-sm-3 col-md-5 pull-right">
+                                    <span class="field-content"><a href="#setups" class="button bw">Setups</a>
+                                    <a href="#" class="button bw">Best routes</a>
+                                    <a href="#" class="button bw">Destinations</a>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-
-
-
-
 
 
                     </div>
@@ -140,16 +140,13 @@ $this->registerCss('
                 <section id="block-system-main" class="block block-system clearfix">
 
 
-                    <div id="node-163" class="node node-page clearfix" about="/ru/%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D1%83%D0%B9%D1%82%D0%B5-%D0%B4%D0%BE%D0%BC-%D0%BD%D0%B0-%D0%BA%D0%BE%D0%BB%D0%B5%D1%81%D0%B0%D1%85" typeof="foaf:Document">
+                    <div id="node-163" class="node node-page clearfix" about="" typeof="foaf:Document">
 
-
-
-                        <span property="dc:title" content="АРЕНДУЙТЕ ДОМ НА КОЛЕСАХ!" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+                        <span property="dc:title" content="АРЕНДУЙТЕ ДОМ НА КОЛЕСАХ!" class="rdf-meta element-hidden"></span>
+                        <span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
 
                         <div class="content">
                         </div>
-
-
 
                     </div>
 
@@ -159,17 +156,27 @@ $this->registerCss('
 
                     <h1>Аренда дома на колесах в северной европе</h1>
                     <h2>Аренда автодома &nbsp;в Исландии, Норвегии, Швеции, Финляндии и Эстонии</h2>
-                    <p>Компания по прокату домов на колесах или как их еще называют «кемперов» Touring Cars является одной из старейших и наиболее крупных организаций в своем роде в Северной Европе. Если вы ищите наилучшее сочетание цены и качества, то Touring Cars- это то, что вам нужно. Помимо &nbsp;современных и хорошо оснащенных моделей кемперов, а также дружелюбного и профессионального персонала по работе с клиентами, компания Touring Cars предлагает трансфер из аэропорта и обратно *, 24/7 помощь при поломке автодомов на дороге, при необходимости услугу по его замене, а также возможность сдачи или приема в аренду выбранного кемпера в любое время суток. Абсолютная гибкость нашего сервиса, белые ночи, сотни тысяч озер и исландские плато застывшей лавы гарантируют вам незабываемый отпуск в доме на колесах!</p>
+                    <p>Компания по прокату домов на колесах или как их еще называют «кемперов» Touring Cars
+                        является одной из старейших и наиболее крупных организаций в своем роде в Северной Европе.
+                        Если вы ищите наилучшее сочетание цены и качества, то Touring Cars- это то, что вам нужно.
+                        Помимо &nbsp;современных и хорошо оснащенных моделей кемперов, а также дружелюбного и
+                        профессионального персонала по работе с клиентами, компания Touring Cars предлагает трансфер
+                        из аэропорта и обратно *, 24/7 помощь при поломке автодомов на дороге, при необходимости
+                        услугу по его замене, а также возможность сдачи или приема в аренду выбранного кемпера в любое
+                        время суток. Абсолютная гибкость нашего сервиса, белые ночи, сотни тысяч озер и исландские
+                        плато застывшей лавы гарантируют вам незабываемый отпуск в доме на колесах!</p>
                     <p>&nbsp;</p>
 
                 </section>
                 <section id="block-block-6" class="block block-block clearfix">
 
 
-                    <p class="rtecenter"><a class="button blue" href="/holiday-ideas#offers">Просмотрите специальные предложения</a></p>
+                    <p class="rtecenter"><a class="button blue" href="/holiday-ideas#offers">
+                            Просмотрите специальные предложения</a></p>
 
                 </section>
-                <section id="block-views-destinations-block" class="block block-views masonry-block masonry clearfix" style="position: relative; width: 1200px; height: 2400px; visibility: visible; display: block;">
+                <section id="block-views-destinations-block" class="block block-views masonry-block masonry clearfix"
+                         style="position: relative; width: 1200px; height: 2400px; visibility: visible; display: block;">
 
 
                     <div class="view view-destinations view-id-destinations view-display-id-block view-dom-id-fcc1ca96c43c4b4ef1949825d686a2ee">
@@ -184,41 +191,135 @@ $this->registerCss('
 
                                 <p class="rtecenter">Аренда автодома &nbsp;в Исландии, Норвегии, Швеции, Финляндии и Эстонии</p>
 
-                                <p>Компания по прокату домов на колесах или как их еще называют «кемперов» Touring Cars является одной из старейших и наиболее крупных организаций в своем роде в Северной Европе. Если вы ищите наилучшее сочетание цены и качества, то Touring Cars- это то, что вам нужно. Помимо &nbsp;современных и хорошо оснащенных моделей кемперов, а также дружелюбного и профессионального персонала по работе с клиентами, компания Touring Cars предлагает трансфер из аэропорта и обратно *, 24/7 помощь при поломке автодомов на дороге, при необходимости услугу по его замене, а также возможность сдачи или приема в аренду выбранного кемпера в любое время суток. Абсолютная гибкость нашего сервиса, белые ночи, сотни тысяч озер и исландские плато застывшей лавы гарантируют вам незабываемый отпуск в доме на колесах!</p>
+                                <p>Компания по прокату домов на колесах или как их еще называют «кемперов» Touring Cars является
+                                    одной из старейших и наиболее крупных организаций в своем роде в Северной Европе. Если вы ищите
+                                    наилучшее сочетание цены и качества, то Touring Cars- это то, что вам нужно. Помимо &nbsp;современных и
+                                    хорошо оснащенных моделей кемперов, а также дружелюбного и профессионального персонала по работе с клиентами,
+                                    компания Touring Cars предлагает трансфер из аэропорта и обратно *, 24/7 помощь при поломке автодомов на
+                                    дороге, при необходимости услугу по его замене, а также возможность сдачи или приема в аренду выбранного
+                                    кемпера в любое время суток. Абсолютная гибкость нашего сервиса, белые ночи, сотни тысяч озер и
+                                    исландские плато застывшей лавы гарантируют вам незабываемый отпуск в доме на колесах!</p>
 
                                 <p class="rtecenter"><a class="button blue" href="/node/26">Check out our holiday ideas</a></p>
                             </div>
 
-                            <div class="views-row views-row-1 views-row-odd views-row-first" style="position: absolute; left: 600px; top: 0px;">
+                            <div class="views-row views-row-1 views-row-odd views-row-first"
+                                 style="position: absolute; left: 600px; top: 0px;">
 
-                                <div class="views-field views-field-field-background-image">        <div class="field-content"><img class="adaptive-image img-responsive" typeof="foaf:Image" src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/sunset-1664960_1920_0.jpg?itok=uejeszG3" alt=""></div>  </div>
-                                <div class="views-field views-field-path">        <span class="field-content"><h2>Latvia</h2> <p></p><p>Camper rental in Latvia is a fantastic option. The country is full of versatile destinations from verdant nature and parks to the cultural cities with historical attractions and exciting adventures.&nbsp;</p>
-<p></p> <a href="/ru/destinations/motorhome-vacation-latvia" class="button transparent">ЧИТАТЬ ПОДРОБНЕЕ</a></span>  </div>  </div>
-                            <div class="views-row views-row-2 views-row-even" style="position: absolute; left: 0px; top: 600px;">
+                                <div class="views-field views-field-field-background-image">
+                                    <div class="field-content">
+                                        <img class="adaptive-image img-responsive" typeof="foaf:Image"
+                                             src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/sunset-1664960_1920_0.jpg?itok=uejeszG3" alt="">
+                                    </div>
+                                </div>
+                                <div class="views-field views-field-path">
+                                    <span class="field-content">
+                                        <h2>Latvia</h2>
+                                        <p></p>
+                                        <p>Camper rental in Latvia is a fantastic option. The country is full of versatile
+                                            destinations from verdant nature and parks to the cultural cities with
+                                            historical attractions and exciting adventures.&nbsp;
+                                        </p>
+                                        <p></p>
+                                        <a href="/ru/destinations/motorhome-vacation-latvia" class="button transparent">
+                                            ЧИТАТЬ ПОДРОБНЕЕ
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="views-row views-row-2 views-row-even"
+                                 style="position: absolute; left: 0px; top: 600px;">
 
-                                <div class="views-field views-field-field-background-image">        <div class="field-content"><img class="adaptive-image img-responsive" typeof="foaf:Image" src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/camper_rental_sweden.jpg?itok=rHi5Qzog" alt=""></div>  </div>
-                                <div class="views-field views-field-path">        <span class="field-content"><h2>Швеции </h2> <p></p><p>иСТОРИЧЕСКИЕ ГОРОДА, дЕСЯТКИ ЗОН НЕТРОНУТОЙ ПРИРОДЫ И БОГАТАЯ САМОБЫТНЫМИ И ВЕСЕЛЫМИ ПРАЗДНИКАМИ КУЛЬТУРА. оТПУСК, ПРОВЕДЕННЫЙ В АРЕНДОВАНОМ АВТОДОМЕ В ШВЕЦИИ,&nbsp;ОСТАВИТ ВАМ НЕПЕРЕДАВАЕМЫЕ ВПЕЧАТЛЕНИЯ.&nbsp;</p>
-<p></p> <a href="/ru/%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D1%88%D0%B2%D0%B5%D1%86%D0%B8%D0%B8" class="button transparent">ЧИТАТЬ ПОДРОБНЕЕ</a></span>  </div>  </div>
-                            <div class="views-row views-row-3 views-row-odd" style="position: absolute; left: 600px; top: 600px;">
+                                <div class="views-field views-field-field-background-image">
+                                    <div class="field-content">
+                                        <img class="adaptive-image img-responsive" typeof="foaf:Image"
+                                             src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/camper_rental_sweden.jpg?itok=rHi5Qzog" alt="">
+                                    </div>
+                                </div>
+                                <div class="views-field views-field-path">
+                                    <span class="field-content">
+                                        <h2>Швеции </h2> <p></p>
+                                        <p>иСТОРИЧЕСКИЕ ГОРОДА, дЕСЯТКИ ЗОН НЕТРОНУТОЙ ПРИРОДЫ И БОГАТАЯ САМОБЫТНЫМИ И
+                                            ВЕСЕЛЫМИ ПРАЗДНИКАМИ КУЛЬТУРА. оТПУСК, ПРОВЕДЕННЫЙ В АРЕНДОВАНОМ АВТОДОМЕ В
+                                            ШВЕЦИИ,&nbsp;ОСТАВИТ ВАМ НЕПЕРЕДАВАЕМЫЕ ВПЕЧАТЛЕНИЯ.&nbsp;</p>
+                                        <p></p>
+                                        <a href="" class="button transparent">ЧИТАТЬ ПОДРОБНЕЕ</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="views-row views-row-3 views-row-odd"
+                                 style="position: absolute; left: 600px; top: 600px;">
 
-                                <div class="views-field views-field-field-background-image">        <div class="field-content"><img class="adaptive-image img-responsive" typeof="foaf:Image" src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/finland-espoo-kaitalampi-lake_0.jpg?itok=kyt9T1VF" alt=""></div>  </div>
-                                <div class="views-field views-field-path">        <span class="field-content"><h2>ФИНЛЯНДИЯ</h2> <p></p><p>ТЫСЯЧИ РОСКОШНЫХ ОЗЕР, ОДИН ИЗ САМЫХ ВЕЛИЧЕСТВЕННЫХ&nbsp; АРХИПЕЛАГОВ МИРА, ТАИНСТВЕННАЯ ЛАПЛАНДИЯ В СОЧЕТАНИИ&nbsp; С ВОЗМОЖНОСТЬЮ СВОБОДНОГО СТРАНСТВОВАНИЯ ГАРАНТИРУЕТ ВАМ ИДЕАЛЬНЫЙ ОТПУСК В АРЕНДОВАННОМ ДОМЕ НА КОЛЕСАХ.</p>
-<p></p> <a href="/ru/%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D1%84%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F" class="button transparent">ЧИТАТЬ ПОДРОБНЕЕ</a></span>  </div>  </div>
+                                <div class="views-field views-field-field-background-image">
+                                    <div class="field-content">
+                                        <img class="adaptive-image img-responsive" typeof="foaf:Image"
+                                             src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/finland-espoo-kaitalampi-lake_0.jpg?itok=kyt9T1VF" alt="">
+                                    </div>
+                                </div>
+                                <div class="views-field views-field-path">
+                                    <span class="field-content">
+                                        <h2>ФИНЛЯНДИЯ</h2> <p></p>
+                                        <p>ТЫСЯЧИ РОСКОШНЫХ ОЗЕР, ОДИН ИЗ САМЫХ ВЕЛИЧЕСТВЕННЫХ&nbsp; АРХИПЕЛАГОВ МИРА,
+                                            ТАИНСТВЕННАЯ ЛАПЛАНДИЯ В СОЧЕТАНИИ&nbsp; С ВОЗМОЖНОСТЬЮ СВОБОДНОГО
+                                            СТРАНСТВОВАНИЯ ГАРАНТИРУЕТ ВАМ ИДЕАЛЬНЫЙ ОТПУСК В АРЕНДОВАННОМ ДОМЕ НА КОЛЕСАХ.
+                                        </p>
+                                        <p></p> <a href="" class="button transparent">ЧИТАТЬ ПОДРОБНЕЕ</a>
+                                    </span>
+                                </div>
+                            </div>
                             <div class="views-row views-row-4 views-row-even" style="position: absolute; left: 0px; top: 1200px;">
 
-                                <div class="views-field views-field-field-background-image">        <div class="field-content"><img class="adaptive-image img-responsive" typeof="foaf:Image" src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/norway_fjord_83752543.jpg?itok=GcaJ-LAy" alt=""></div>  </div>
-                                <div class="views-field views-field-path">        <span class="field-content"><h2>НОРВЕГИЯ</h2> <p></p><p>ЗАХВАТЫВАЮЩИЕ ДУХ ВИДЫ НА ФЬОРДЫ, ВОЗМОЖНОСТЬ ОТДОХНУТЬ И РАССЛАБИТЬСЯ НА КРАЮ, ОМЫВАЕМОЙ АРКТИЧЕСКИМ МОРЕМ, МНОГИМИ СОТНЯМИ МЕТРОВ НИЖЕ, ГОРЫ. &nbsp;</p>
-<p></p> <a href="/ru/%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D0%BD%D0%BE%D1%80%D0%B2%D0%B5%D0%B3%D0%B8%D1%8F" class="button transparent">ЧИТАТЬ ПОДРОБНЕЕ</a></span>  </div>  </div>
-                            <div class="views-row views-row-5 views-row-odd" style="position: absolute; left: 600px; top: 1200px;">
+                                <div class="views-field views-field-field-background-image">
+                                    <div class="field-content">
+                                        <img class="adaptive-image img-responsive" typeof="foaf:Image"
+                                             src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/norway_fjord_83752543.jpg?itok=GcaJ-LAy" alt="">
+                                    </div>
+                                </div>
+                                <div class="views-field views-field-path">
+                                    <span class="field-content"><h2>НОРВЕГИЯ</h2> <p></p>
+                                        <p>ЗАХВАТЫВАЮЩИЕ ДУХ ВИДЫ НА ФЬОРДЫ, ВОЗМОЖНОСТЬ ОТДОХНУТЬ И РАССЛАБИТЬСЯ НА КРАЮ, ОМЫВАЕМОЙ АРКТИЧЕСКИМ МОРЕМ,
+                                            МНОГИМИ СОТНЯМИ МЕТРОВ НИЖЕ, ГОРЫ. &nbsp;</p>
+                                        <p></p>
+                                        <a href="" class="button transparent">ЧИТАТЬ ПОДРОБНЕЕ</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="views-row views-row-5 views-row-odd"
+                                 style="position: absolute; left: 600px; top: 1200px;">
 
-                                <div class="views-field views-field-field-background-image">        <div class="field-content"><img class="adaptive-image img-responsive" typeof="foaf:Image" src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/motorhome_rental_estonia.jpg?itok=NCrPhXAl" alt=""></div>  </div>
-                                <div class="views-field views-field-path">        <span class="field-content"><h2>ШВЕЦИЯ</h2> <p></p><p>иСТОРИЧЕСКИЕ ГОРОДА, дЕСЯТКИ зон НЕТРОНУТОЙ ПРИРОДЫ И БОГАТАЯ САМОБЫТНЫМИ И ВЕСЕЛЫМИ ПРАЗДНИКАМИ культура. оТПУСК, ПРОВЕДЕННЫЙ В АРЕНДОвАННОМ АВТОДОМЕ В ШВЕЦИИ,&nbsp;ОСТАВИТ ВАм НЕПЕРЕДАВАЕМЫЕ ВПЕЧАТЛЕНИЯ.&nbsp;</p>
-<p></p> <a href="/ru/%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D1%8D%D1%81%D1%82%D0%BE%D0%BD%D0%B8%D0%B8" class="button transparent">ЧИТАТЬ ПОДРОБНЕЕ</a></span>  </div>  </div>
-                            <div class="views-row views-row-6 views-row-even views-row-last" style="position: absolute; left: 0px; top: 1800px;">
+                                <div class="views-field views-field-field-background-image">
+                                    <div class="field-content">
+                                        <img class="adaptive-image img-responsive" typeof="foaf:Image"
+                                             src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/motorhome_rental_estonia.jpg?itok=NCrPhXAl" alt="">
+                                    </div>
+                                </div>
+                                <div class="views-field views-field-path">
+                                    <span class="field-content"><h2>ШВЕЦИЯ</h2> <p></p>
+                                        <p>иСТОРИЧЕСКИЕ ГОРОДА, дЕСЯТКИ зон НЕТРОНУТОЙ ПРИРОДЫ И БОГАТАЯ САМОБЫТНЫМИ И ВЕСЕЛЫМИ ПРАЗДНИКАМИ
+                                            культура. оТПУСК, ПРОВЕДЕННЫЙ В АРЕНДОвАННОМ АВТОДОМЕ В ШВЕЦИИ,&nbsp;ОСТАВИТ ВАм
+                                            НЕПЕРЕДАВАЕМЫЕ ВПЕЧАТЛЕНИЯ.&nbsp;</p>
+                                        <p></p>
+                                        <a href="" class="button transparent">ЧИТАТЬ ПОДРОБНЕЕ</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="views-row views-row-6 views-row-even views-row-last"
+                                 style="position: absolute; left: 0px; top: 1800px;">
 
-                                <div class="views-field views-field-field-background-image">        <div class="field-content"><img class="adaptive-image img-responsive" typeof="foaf:Image" src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/islanti_1.jpg?itok=8XTfm-2T" alt=""></div>  </div>
-                                <div class="views-field views-field-path">        <span class="field-content"><h2>ИСЛАНДИИ</h2> <p></p><p>лЕДНИКИ, ПОЛЯ ЗАСТЫВШЕЙ ЛАВЫ И ГЕЙЗЕРЫ. аРЕНДА ДОМОВ НА КОЛЕСАХ В ИСЛАНДИИ ПОДАРИТ ВАМ НЕЗАБЫВАЕМЫЕ ВПЕЧАТЛЕНИЯ.</p>
-<p></p> <a href="/ru/%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D0%B8%D1%81%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D0%B8" class="button transparent">ЧИТАТЬ ПОДРОБНЕЕ</a></span>  </div>  </div>
+                                <div class="views-field views-field-field-background-image">
+                                    <div class="field-content">
+                                        <img class="adaptive-image img-responsive" typeof="foaf:Image"
+                                             src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/islanti_1.jpg?itok=8XTfm-2T" alt="">
+                                    </div>
+                                </div>
+                                <div class="views-field views-field-path">
+                                    <span class="field-content"><h2>ИСЛАНДИИ</h2> <p></p>
+                                        <p>лЕДНИКИ, ПОЛЯ ЗАСТЫВШЕЙ ЛАВЫ И ГЕЙЗЕРЫ. аРЕНДА ДОМОВ НА КОЛЕСАХ В ИСЛАНДИИ ПОДАРИТ ВАМ НЕЗАБЫВАЕМЫЕ ВПЕЧАТЛЕНИЯ.</p>
+                                        <p></p>
+                                        <a href="" class="button transparent">ЧИТАТЬ ПОДРОБНЕЕ</a>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
 
 

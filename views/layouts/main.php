@@ -45,9 +45,9 @@ $this->registerCss('../css/css_zy075VUTfcBGG737uKSc8dJGGp1HYV83QrGdFUMzk5Y.css')
         'options' => ['class' => 'navbar-nav navbar-left'],
         'items' => [
             ['label' => 'Идеи для отдыха', 'url' => ['/site/about']],
-            ['label' => 'Цены', 'url' => ['/site/about']],
-            ['label' => 'Главная информация', 'url' => ['/site/about']],
-            ['label' => 'Заказать сейчас', 'url' => ['/site/about']],
+            ['label' => 'Цены', 'url' => ['/site/prize']],
+            ['label' => 'Главная информация', 'url' => ['/site/aboutmain']],
+            ['label' => 'Заказать сейчас', 'url' => ['/site/contact']],
             /*['label' => 'Contact', 'url' => ['/site/contact']],*/
             /*Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
