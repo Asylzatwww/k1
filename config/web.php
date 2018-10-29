@@ -40,6 +40,9 @@ $config = [
                 ],
             ],
         ],
+        'assetManager' => [
+            'linkAssets' => true,
+        ],
         'db' => require(__DIR__ . '/db.php'),
 
         /*'urlManager' => [
