@@ -29,12 +29,6 @@ $this->registerCss('
 ?>
 </div>
 
-<div class="container-fluid" style="background-image: url(../img/header-front-touringcars.jpg);
-    margin-top: -20px;
-    padding-top: 20px;">
-    <img src="../img/change-your-backyard-every-day-touringcars.png" />
-    hahaha
-</div>
 
 
 
