@@ -11,11 +11,11 @@ use app\assets\AppAsset;
 AppAsset::register($this);
 
 
-$this->registerCss('../css/css_gypEgtlRvYu1WHmKes6mEXoj3Zf3sk2YcN4cIYKPUcI.css');
-$this->registerCss('../css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css');
-$this->registerCss('../css/css_o5m5YfhNvCAmTYElqKpCQG6h1HjE4crK0Lriiytig8I.css');
-$this->registerCss('../css/css_vHo3gQdCqF0aRTA3r6WfnlQfhq_O2_NZcDfs-xLFGPw.css');
-$this->registerCss('../css/css_zy075VUTfcBGG737uKSc8dJGGp1HYV83QrGdFUMzk5Y.css');
+$this->registerCssFile('../css/css_gypEgtlRvYu1WHmKes6mEXoj3Zf3sk2YcN4cIYKPUcI.css');
+$this->registerCssFile('../css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css');
+$this->registerCssFile('../css/css_o5m5YfhNvCAmTYElqKpCQG6h1HjE4crK0Lriiytig8I.css');
+$this->registerCssFile('../css/css_vHo3gQdCqF0aRTA3r6WfnlQfhq_O2_NZcDfs-xLFGPw.css');
+$this->registerCssFile('../css/css_zy075VUTfcBGG737uKSc8dJGGp1HYV83QrGdFUMzk5Y.css');
 
 
 ?>
