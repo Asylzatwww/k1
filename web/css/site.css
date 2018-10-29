@@ -116,12 +116,12 @@ a.desc:after {
 
 /* tiuring car css  */
 
-.navbar-inverse {
+body .navbar-inverse {
     background-color: rgba(0,60,85,0.9);
     border: 0px solid white;
 }
 
-.navbar-nav > li > a {
+body .navbar-nav > li > a {
     padding-top: 25px;
     padding-bottom: 25px;
 }
