@@ -15,10 +15,9 @@ body {
 }
 
 .footer {
-    height: 60px;
-    background-color: #f5f5f5;
     border-top: 1px solid #ddd;
-    padding-top: 20px;
+    padding: 50px 0 100px 0;
+    background: #041b26;
 }
 
 .jumbotron {
@@ -128,6 +127,10 @@ body .navbar-inverse {
     font-size: 14px;
     text-transform: uppercase;
     color:white;
+}
+
+.footercenter {
+    text-align: center;
 }
 
 /* toring car css ends up */
