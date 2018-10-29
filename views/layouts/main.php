@@ -33,12 +33,14 @@ AppAsset::register($this);
         ],
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => ['class' => 'navbar-nav navbar-left'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
-            Yii::$app->user->isGuest ? (
+            ['label' => 'Идеи для отдыха', 'url' => ['/site/about']],
+            ['label' => 'Цены', 'url' => ['/site/about']],
+            ['label' => 'Главная информация', 'url' => ['/site/about']],
+            ['label' => 'Заказать сейчас', 'url' => ['/site/about']],
+            /*['label' => 'Contact', 'url' => ['/site/contact']],*/
+            /*Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
                 '<li>'
@@ -49,7 +51,7 @@ AppAsset::register($this);
                 )
                 . Html::endForm()
                 . '</li>'
-            )
+            )*/
         ],
     ]);
     NavBar::end();
