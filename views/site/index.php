@@ -6,7 +6,7 @@ $this->title = 'My Yii Application';
 ?>
 </div>
 
-<div class="container">
+<div class="container-fluid">
 
     hahaha
 </div>
