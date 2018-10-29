@@ -58,52 +58,120 @@ $this->registerCss('
                         <input type="hidden" name="returnPlaceName" value="null">
                         <input type="hidden" name="departureDate" value="null">
                         <input type="hidden" name="returnDate" value="null">
-                        <div class="col-xs-12 col-md-6"><fieldset class="panel panel-default form-wrapper" id="edit-group1">
-                                <legend class="panel-heading">
-                                    <span class="panel-title fieldset-legend">Страна</span>
-                                </legend>
-                                <div class="panel-body">
-                                    <div class="form-item form-item-departurecountry form-type-select form-group formskin"> <label class="control-label" for="edit-departurecountry">Страна <span class="form-required" title="Это поле обязательно для заполнения.">*</span></label>
-                                        <div class="formskin-select"><select class="form-control form-select required formskin-processed" id="edit-departurecountry" name="departureCountry"><option value="" selected="selected">- Выберите -</option><option value="EE">Estonia</option><option value="FI">Finland</option><option value="IS">Iceland</option><option value="NO">Norway</option><option value="SE">Sweden</option><option value="ES">Spain</option><option value="GB">United Kingdom</option><option value="PL">Poland</option><option value="LV">Latvia</option></select><span>- Выберите -</span></div></div>  </div>
-                            </fieldset>
-                        </div><div class="col-xs-12 col-md-6"><fieldset class="panel panel-default form-wrapper" id="edit-group2">
-                                <legend class="panel-heading">
-                                    <span class="panel-title fieldset-legend">Место</span>
-                                </legend>
-                                <div class="panel-body">
-                                    <div class="form-item form-item-departurecode form-type-select form-group formskin"> <label class="control-label" for="edit-departurecode">Город <span class="form-required" title="Это поле обязательно для заполнения.">*</span></label>
-                                        <div class="formskin-select"><select class="form-control form-select required formskin-processed" id="edit-departurecode" name="departureCode"><option value="" selected="selected">- Выберите -</option></select><span>- Выберите -</span></div></div>  </div>
-                            </fieldset>
-                        </div><div class="col-xs-12 col-md-6"><fieldset class="panel panel-default form-wrapper" id="edit-group3">
+
+                        <div class="col-xs-12 col-md-6">
+                            <fieldset class="panel panel-default form-wrapper" id="edit-group3">
                                 <legend class="panel-heading">
                                     <span class="panel-title fieldset-legend">Pick-up</span>
                                 </legend>
                                 <div class="panel-body">
-                                    <div class="container-inline-date"><div class="form-item form-item-departuredate form-type-date-popup form-group"> <label class="control-label" for="edit-departuredate--2">Дата</label>
-                                            <div id="edit-departuredate--2" class="date-padding clearfix"><div class="form-item form-item-departuredate-date form-type-textfield form-group"> <label class="control-label" for="edit-departuredate--2-datepicker-popup-0">Дата</label>
-                                                    <span class="custom-date-popup"><input class="form-control form-text" type="text" id="edit-departuredate--2-datepicker-popup-0" name="departureDate[date]" value="" size="20" maxlength="30"></span></div></div></div></div><div class="form-item form-item-departuretime form-type-select form-group formskin"> <label class="control-label" for="edit-departuretime">Время</label>
-                                        <div class="formskin-select"><select class="form-control form-select formskin-processed" id="edit-departuretime" name="departureTime"><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:50">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option></select><span>08:00</span></div></div>  </div>
+                                    <div class="container-inline-date">
+                                        <div class="form-item form-item-departuredate form-type-date-popup form-group">
+                                            <label class="control-label" for="edit-departuredate--2">Дата</label>
+                                            <div id="edit-departuredate--2" class="date-padding clearfix">
+                                                <div class="form-item form-item-departuredate-date form-type-textfield form-group">
+                                                    <label class="control-label" for="edit-departuredate--2-datepicker-popup-0">Дата</label>
+                                                    <span class="custom-date-popup">
+                                                        <input class="form-control form-text" type="text"
+                                                               id="edit-departuredate--2-datepicker-popup-0" name="departureDate[date]"
+                                                               value="" size="20" maxlength="30">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-item form-item-departuretime form-type-select form-group formskin">
+                                        <label class="control-label" for="edit-departuretime">Время</label>
+                                        <div class="formskin-select">
+                                            <select class="form-control form-select formskin-processed" id="edit-departuretime" name="departureTime">
+                                                <option value="08:00">08:00</option>
+                                                <option value="08:30">08:30</option>
+                                                <option value="09:00">09:00</option>
+                                                <option value="09:30">09:30</option>
+                                                <option value="10:00">10:00</option>
+                                                <option value="10:30">10:30</option>
+                                                <option value="11:00">11:00</option>
+                                                <option value="11:30">11:30</option>
+                                                <option value="12:00">12:00</option>
+                                                <option value="12:30">12:30</option>
+                                                <option value="13:00">13:00</option>
+                                                <option value="13:30">13:30</option>
+                                                <option value="14:00">14:00</option>
+                                                <option value="14:30">14:30</option>
+                                                <option value="15:00">15:00</option>
+                                                <option value="15:30">15:30</option>
+                                                <option value="16:00">16:00</option>
+                                                <option value="16:50">16:30</option>
+                                                <option value="17:00">17:00</option>
+                                                <option value="17:30">17:30</option>
+                                                <option value="18:00">18:00</option>
+                                                <option value="18:30">18:30</option>
+                                            </select>
+                                            <span>08:00</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </fieldset>
-                        </div><div class="col-xs-12 col-md-6"><fieldset class="panel panel-default form-wrapper" id="edit-group4">
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <fieldset class="panel panel-default form-wrapper" id="edit-group4">
                                 <legend class="panel-heading">
                                     <span class="panel-title fieldset-legend">Return</span>
                                 </legend>
                                 <div class="panel-body">
-                                    <div class="container-inline-date"><div class="form-item form-item-returndate form-type-date-popup form-group"> <label class="control-label" for="edit-returndate--2">Дата</label>
-                                            <div id="edit-returndate--2" class="date-padding clearfix"><div class="form-item form-item-returndate-date form-type-textfield form-group"> <label class="control-label" for="edit-returndate--2-datepicker-popup-0">Дата</label>
-                                                    <span class="custom-date-popup"><input class="form-control form-text" type="text" id="edit-returndate--2-datepicker-popup-0" name="returnDate[date]" value="" size="20" maxlength="30"></span></div></div></div></div><div class="form-item form-item-returntime form-type-select form-group formskin"> <label class="control-label" for="edit-returntime">Время</label>
-                                        <div class="formskin-select"><select class="form-control form-select formskin-processed" id="edit-returntime" name="returnTime"><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:50">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option></select><span>08:00</span></div></div>  </div>
+                                    <div class="container-inline-date">
+                                        <div class="form-item form-item-returndate form-type-date-popup form-group">
+                                            <label class="control-label" for="edit-returndate--2">Дата</label>
+                                            <div id="edit-returndate--2" class="date-padding clearfix">
+                                                <div class="form-item form-item-returndate-date form-type-textfield form-group">
+                                                    <label class="control-label" for="edit-returndate--2-datepicker-popup-0">Дата</label>
+                                                    <span class="custom-date-popup">
+                                                        <input class="form-control form-text" type="text" id="edit-returndate--2-datepicker-popup-0"
+                                                               name="returnDate[date]" value="" size="20" maxlength="30">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-item form-item-returntime form-type-select form-group formskin">
+                                        <label class="control-label" for="edit-returntime">Время</label>
+                                        <div class="formskin-select">
+                                            <select class="form-control form-select formskin-processed" id="edit-returntime" name="returnTime">
+                                                <option value="08:00">08:00</option>
+                                                <option value="08:30">08:30</option>
+                                                <option value="09:00">09:00</option>
+                                                <option value="09:30">09:30</option>
+                                                <option value="10:00">10:00</option>
+                                                <option value="10:30">10:30</option>
+                                                <option value="11:00">11:00</option>
+                                                <option value="11:30">11:30</option>
+                                                <option value="12:00">12:00</option>
+                                                <option value="12:30">12:30</option>
+                                                <option value="13:00">13:00</option>
+                                                <option value="13:30">13:30</option>
+                                                <option value="14:00">14:00</option>
+                                                <option value="14:30">14:30</option>
+                                                <option value="15:00">15:00</option>
+                                                <option value="15:30">15:30</option>
+                                                <option value="16:00">16:00</option>
+                                                <option value="16:50">16:30</option>
+                                                <option value="17:00">17:00</option>
+                                                <option value="17:30">17:30</option>
+                                                <option value="18:00">18:00</option>
+                                                <option value="18:30">18:30</option>
+                                            </select>
+                                            <span>08:00</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </fieldset>
-                        </div><button type="submit" id="edit-submit--2" name="op" value="ЗАКАЗАТЬ ПРЯМО СЕЙЧАС" class="btn btn-default form-submit">ЗАКАЗАТЬ ПРЯМО СЕЙЧАС</button>
+                        </div>
+                        <button type="submit" id="edit-submit--2" name="op" value="ЗАКАЗАТЬ ПРЯМО СЕЙЧАС" class="btn btn-default form-submit">
+                            ЗАКАЗАТЬ ПРЯМО СЕЙЧАС</button>
                         <input type="hidden" name="form_build_id" value="form-5GxMFLU_oHlfIqApbUk0YI2O0L1A6_zGQnHDI0P9Ar8">
                         <input type="hidden" name="form_id" value="bookingform_form">
-                    </div></form>
-            </section>
-            <section id="block-block-13" class="block block-block clearfix">
-
-
-                <a href="http://booking.touringcars.eu" id="book-now-button"><img alt="" src="/sites/default/files/book-now-button.png" style="height:34px; width:148px"></a>
-
+                    </div>
+                </form>
             </section>
         </div>
     </header> <!-- /#page-header -->
@@ -154,17 +222,17 @@ $this->registerCss('
                 <section id="block-block-7" class="block block-block text-center container clearfix">
 
 
-                    <h1>Аренда дома на колесах в северной европе</h1>
-                    <h2>Аренда автодома &nbsp;в Исландии, Норвегии, Швеции, Финляндии и Эстонии</h2>
-                    <p>Компания по прокату домов на колесах или как их еще называют «кемперов» Touring Cars
-                        является одной из старейших и наиболее крупных организаций в своем роде в Северной Европе.
-                        Если вы ищите наилучшее сочетание цены и качества, то Touring Cars- это то, что вам нужно.
+                    <h1>Аренда дома на колесах в кыргызстане</h1>
+                    <h2>Аренда автодома &nbsp;в Бишкеке</h2>
+                    <p>Компания по прокату домов на колесах или как их еще называют «кемперов» Kg Car Tour
+                        является одной из старейших и наиболее крупных организаций в своем роде в Кыргызстане.
+                        Если вы ищите наилучшее сочетание цены и качества, то Kg Car Tour- это то, что вам нужно.
                         Помимо &nbsp;современных и хорошо оснащенных моделей кемперов, а также дружелюбного и
-                        профессионального персонала по работе с клиентами, компания Touring Cars предлагает трансфер
+                        профессионального персонала по работе с клиентами, компания Kg Car Tour предлагает трансфер
                         из аэропорта и обратно *, 24/7 помощь при поломке автодомов на дороге, при необходимости
                         услугу по его замене, а также возможность сдачи или приема в аренду выбранного кемпера в любое
-                        время суток. Абсолютная гибкость нашего сервиса, белые ночи, сотни тысяч озер и исландские
-                        плато застывшей лавы гарантируют вам незабываемый отпуск в доме на колесах!</p>
+                        время суток. Абсолютная гибкость нашего сервиса, отдых на озере в горах
+                        гарантируют вам незабываемый отпуск в доме на колесах!</p>
                     <p>&nbsp;</p>
 
                 </section>
@@ -187,20 +255,18 @@ $this->registerCss('
 
 
                             <div class="views-row view-header" style="position: absolute; left: 0px; top: 0px;">
-                                <h2 class="rtecenter">Аренда дома на колесах в северной европе</h2>
-
-                                <p class="rtecenter">Аренда автодома &nbsp;в Исландии, Норвегии, Швеции, Финляндии и Эстонии</p>
-
-                                <p>Компания по прокату домов на колесах или как их еще называют «кемперов» Touring Cars является
-                                    одной из старейших и наиболее крупных организаций в своем роде в Северной Европе. Если вы ищите
-                                    наилучшее сочетание цены и качества, то Touring Cars- это то, что вам нужно. Помимо &nbsp;современных и
-                                    хорошо оснащенных моделей кемперов, а также дружелюбного и профессионального персонала по работе с клиентами,
-                                    компания Touring Cars предлагает трансфер из аэропорта и обратно *, 24/7 помощь при поломке автодомов на
-                                    дороге, при необходимости услугу по его замене, а также возможность сдачи или приема в аренду выбранного
-                                    кемпера в любое время суток. Абсолютная гибкость нашего сервиса, белые ночи, сотни тысяч озер и
-                                    исландские плато застывшей лавы гарантируют вам незабываемый отпуск в доме на колесах!</p>
-
-                                <p class="rtecenter"><a class="button blue" href="/node/26">Check out our holiday ideas</a></p>
+                                <h2>Аренда дома на колесах в кыргызстане</h2>
+                                <p>Аренда автодома &nbsp;в Бишкеке</p>
+                                <p>Компания по прокату домов на колесах или как их еще называют «кемперов» Kg Car Tour
+                                    является одной из старейших и наиболее крупных организаций в своем роде в Кыргызстане.
+                                    Если вы ищите наилучшее сочетание цены и качества, то Kg Car Tour- это то, что вам нужно.
+                                    Помимо &nbsp;современных и хорошо оснащенных моделей кемперов, а также дружелюбного и
+                                    профессионального персонала по работе с клиентами, компания Kg Car Tour предлагает трансфер
+                                    из аэропорта и обратно *, 24/7 помощь при поломке автодомов на дороге, при необходимости
+                                    услугу по его замене, а также возможность сдачи или приема в аренду выбранного кемпера в любое
+                                    время суток. Абсолютная гибкость нашего сервиса, отдых на озере в горах
+                                    гарантируют вам незабываемый отпуск в доме на колесах!</p>
+                                <p>&nbsp;</p>
                             </div>
 
                             <div class="views-row views-row-1 views-row-odd views-row-first"

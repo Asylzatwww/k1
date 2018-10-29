@@ -4,7 +4,7 @@
 
 use yii\helpers\Html;
 
-$this->title = 'About';
+$this->title = 'Цены';
 $this->params['breadcrumbs'][] = $this->title;
 
 $this->registerCss('

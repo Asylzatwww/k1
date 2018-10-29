@@ -77,15 +77,17 @@ AppAsset::register($this);
 <footer class="footer">
 
     <div class="container footercenter">
-        <h2 class="block-title">САМАЯ КРУПНАЯ КОМПАНИЯ ПО АРЕНДЕ КЕМПЕРОВ В СЕВЕРНОЙ ЕВРОПЕ</h2>
-        <p class="rtecenter">Компания Touring Cars - ведущий поставщик кемперов для путешествия по Северной Европе. Имея свыше 34 лет опыта, мы сдаем в аренду качественные дома на колесах и поддерживаем высокие стандарты в работе с клиентами в Исландии, Норвегии, Швеции, Финляндии и Эстонии. Качество сервиса компании Touring Cars гарантированно всегда!</p>
-        <p class="rtecenter">Sales Office: +358 (9) 849 4050<br><a href="mailto:info@touringcars.eu">info@touringcars.eu</a></p>
+        <h2 class="block-title">САМАЯ КРУПНАЯ КОМПАНИЯ ПО АРЕНДЕ КЕМПЕРОВ В КЫРГЫЗСТАНЕ</h2>
+        <p class="rtecenter">Компания Kg Car Tour - ведущий поставщик кемперов для путешествия по Кыргызстану. Имея свыше 14 лет опыта,
+            мы сдаем в аренду качественные дома на колесах и поддерживаем высокие стандарты в работе с клиентами
+            в Бишкеке, Чолпон-Ате, Бостери, Каракол. Качество сервиса компании Kg Car Tour гарантированно всегда!</p>
+        <p class="rtecenter">Отдел продаж: +996 703 18 41 37<br><a href="mailto:info@touringcars.eu">softwww@yandex.ru</a></p>
     </div>
 
 
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-left">&copy; Kg Car Tour <?= date('Y') ?></p>
+        <p class="pull-right">Разработано SoftWWW</p>
     </div>
 </footer>
 
