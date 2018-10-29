@@ -15,6 +15,18 @@ $this->title = 'My Yii Application';
 }
  * */
 
+$this->registerCss('
+ #page-header:before {
+    background-color: #FFFFFF !important;
+    background-image: url(../img/header-front-touringcars.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-position: center top !important;
+}
+
+');
+
+
 
 ?>
 
@@ -36,7 +48,7 @@ $this->title = 'My Yii Application';
             <section id="block-block-5" class="block block-block container text-center clearfix">
 
 
-                <p class="rtecenter"><img alt="Change your backyard every day" src="/sites/default/files/change-your-backyard-every-day-touringcars.png" style="height:231px; width:494px"></p>
+                <p class="rtecenter"><img alt="Change your backyard every day" src="../css/change-your-backyard-every-day-touringcars.png" style="height:231px; width:494px"></p>
 
             </section>
             <section id="block-booking-bookingblock" class="block block-booking container clearfix">
