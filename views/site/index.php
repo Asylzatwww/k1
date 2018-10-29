@@ -15,7 +15,7 @@ $this->title = 'My Yii Application';
 }
  * */
 
-$this->view->registerCss('
+$this->registerCss('
  #page-header:before {
     background-color: #FFFFFF !important;
     background-image: url(http://www.touringcars.eu/sites/default/files/styles/1600x900/public/default_images/default_header_2.jpg?itok=YHp18irO) !important;
