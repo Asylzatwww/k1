@@ -113,3 +113,17 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+/* tiuring car css  */
+
+.navbar-inverse {
+    background-color: rgba(0,60,85,0.9);
+    border: 0px solid white;
+}
+
+.navbar-nav > li > a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* toring car css ends up */
