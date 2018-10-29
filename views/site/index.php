@@ -4,6 +4,15 @@
 
 $this->title = 'My Yii Application';
 ?>
+</div>
+
+<div class="container">
+
+    hahaha
+</div>
+
+<div class="container">
+
 <div class="site-index">
 
     <div class="jumbotron">
