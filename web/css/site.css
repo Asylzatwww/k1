@@ -138,3 +138,11 @@ body .navbar-inverse {
 
 /* toring car css ends up */
 
+
+
+
+
+body .navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+}
+
