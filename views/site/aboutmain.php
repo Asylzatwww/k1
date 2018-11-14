@@ -5,7 +5,6 @@
 use yii\helpers\Html;
 
 $this->title = 'Главная информация';
-$this->params['breadcrumbs'][] = $this->title;
 
 $this->registerCss('
  #page-header:before {
