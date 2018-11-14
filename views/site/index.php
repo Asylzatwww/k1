@@ -10,7 +10,7 @@ $this->title = 'My Yii Application';
 
 
 
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin-top: -100px;">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -21,43 +21,43 @@ $this->title = 'My Yii Application';
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="http://asylzatwww.beget.tech/img/1.jpg" alt="...">
+                <img src="./img/6.jpg" alt="...">
                 <div class="carousel-caption">
                     ...
                 </div>
             </div>
             <div class="item">
-                <img src="http://asylzatwww.beget.tech/img/2.jpg" alt="...">
-                <div class="carousel-caption">
-                    ...
-                </div>
-            </div>
-            <div class="item active">
-                <img src="http://asylzatwww.beget.tech/img/3.jpg" alt="...">
+                <img src="./img/2.jpg" alt="...">
                 <div class="carousel-caption">
                     ...
                 </div>
             </div>
             <div class="item">
-                <img src="http://asylzatwww.beget.tech/img/4.jpg" alt="...">
-                <div class="carousel-caption">
-                    ...
-                </div>
-            </div>
-            <div class="item active">
-                <img src="http://asylzatwww.beget.tech/img/5.jpg" alt="...">
+                <img src="./img/3.jpg" alt="...">
                 <div class="carousel-caption">
                     ...
                 </div>
             </div>
             <div class="item">
-                <img src="http://asylzatwww.beget.tech/img/6.jpg" alt="...">
+                <img src="./img/4.jpg" alt="...">
                 <div class="carousel-caption">
                     ...
                 </div>
             </div>
-            <div class="item active">
-                <img src="http://asylzatwww.beget.tech/img/7.jpg" alt="...">
+            <div class="item">
+                <img src="./img/5.jpg" alt="...">
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/1.jpg" alt="...">
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/7.jpg" alt="...">
                 <div class="carousel-caption">
                     ...
                 </div>
