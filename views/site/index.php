@@ -4,58 +4,91 @@
 
 $this->title = 'My Yii Application';
 
-/*
- *
- #page-header:before {
-    background-color: #FFFFFF !important;
-    background-image: url(http://www.touringcars.eu/sites/default/files/styles/1600x900/public/default_images/default_header_2.jpg?itok=YHp18irO) !important;
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center top !important;
-}
- * */
-
-$this->registerCss('
- #page-header:before {
-    background-color: #FFFFFF !important;
-    background-image: url(../img/header-front-touringcars.jpg) !important;
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center top !important;
-}
-
-');
-
-
-
 ?>
 
 </div>
 
 
 
-<div class="container-fluid" style="background-color: #FFFFFF !important;
-    background-image: url(../img/header-front-touringcars.jpg) !important;
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center top !important;
-width:100%;height:200px;">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="http://asylzatwww.beget.tech/img/1.jpg" alt="...">
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://asylzatwww.beget.tech/img/2.jpg" alt="...">
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            <div class="item active">
+                <img src="http://asylzatwww.beget.tech/img/3.jpg" alt="...">
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://asylzatwww.beget.tech/img/4.jpg" alt="...">
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            <div class="item active">
+                <img src="http://asylzatwww.beget.tech/img/5.jpg" alt="...">
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://asylzatwww.beget.tech/img/6.jpg" alt="...">
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            <div class="item active">
+                <img src="http://asylzatwww.beget.tech/img/7.jpg" alt="...">
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
 </div>
 
 <div class="container">
-    <h1>АРЕНДА ДОМА НА КОЛЕСАХ В СЕВЕРНОЙ ЕВРОПЕ Starting here</h1>
-    <h2>АРЕНДА АВТОДОМА  В ИСЛАНДИИ, НОРВЕГИИ, ШВЕЦИИ, ФИНЛЯНДИИ И ЭСТОНИИ</h2>
+    <h1>АРЕНДА ДОМА НА КОЛЕСАХ В КЫРГЫЗСТАНЕ</h1>
+    <h2>АРЕНДА АВТОДОМА  В КЫРГЫЗСТАНЕ</h2>
     <p>
-        Компания по прокату домов на колесах или как их еще называют «кемперов» Touring Cars является
-        одной из старейших и наиболее крупных организаций в своем роде в Северной Европе. Если вы ищите
-        наилучшее сочетание цены и качества, то Touring Cars- это то, что вам нужно. Помимо
+        Компания по прокату домов на колесах или как их еще называют «кемперов» Van Tour является
+        одной из старейших и наиболее крупных организаций в своем роде в Кыргызстане. Если вы ищите
+        наилучшее сочетание цены и качества, то Van Tour - это то, что вам нужно. Помимо
         современных и хорошо оснащенных моделей кемперов, а также дружелюбного и профессионального
-        персонала по работе с клиентами, компания Touring Cars предлагает трансфер из аэропорта и
+        персонала по работе с клиентами, компания Van Tour предлагает трансфер из аэропорта и
         обратно *, 24/7 помощь при поломке автодомов на дороге, при необходимости услугу по его замене,
         а также возможность сдачи или приема в аренду выбранного кемпера в любое время суток.
-        Абсолютная гибкость нашего сервиса, белые ночи, сотни тысяч озер и исландские плато застывшей
-        лавы гарантируют вам незабываемый отпуск в доме на колесах!
+        Абсолютная гибкость нашего сервиса, ущелье Джети-Огуз, озеро Ала-Куль гарантируют вам незабываемый отпуск в доме на колесах!
     </p>
 </div>
 
