@@ -6,16 +6,6 @@ use yii\helpers\Html;
 
 $this->title = 'Идеи для отдыха';
 
-$this->registerCss('
- #page-header:before {
-    background-color: #FFFFFF !important;
-    background-image: url(../img/header-front-touringcars.jpg) !important;
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center top !important;
-}
-
-');
 
 
 ?>
@@ -26,176 +16,166 @@ $this->registerCss('
 
 
 
-<div class="main-container container-fluid">
 
-    <header role="banner" id="page-header">
 
-        <div class="region region-header">
-            <section id="block-views-basic-header-block" class="block block-views container basic-header clearfix">
 
-                <div class="view view-basic-header view-id-basic_header view-display-id-block view-dom-id-dedf0e29294a1e187e0e13ef20b230f8">
 
-                    <div class="view-content">
-                        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
 
-                            <div class="views-field views-field-title">        <span class="field-content col-xs-12 col-sm-8 col-md-7"><h1>ИДЕИ ДЛЯ ОТДЫXА</h1></span>  </div>  </div>
+
+
+<div id="travel-log-front-page-post-filter-wrap" class="travel-log-show-partial-edit-shortcut">		<section id="tab-tours" class="tab-tours">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="section-title">Популярные достопримечательности Кыргызстана</h2>
+                    <div class="title-tagline">
+                        <p></p>
                     </div>
-
                 </div>
-            </section>
-        </div>
-    </header> <!-- /#page-header -->
-
-    <div class="row">
-
-        <section class="col-sm-12">
-
-            <a id="main-content"></a>
-            <div class="region region-content">
-                <section id="block-views-summary-block" class="block block-views container clearfix">
-
-                    <div class="view view-summary view-id-summary view-display-id-block view-dom-id-dbe2545a63fd4f6b2533bd1f973e3af3">
-
-                        <div class="view-content">
-                            <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
-
-                                <div class="views-field views-field-body col-xs-12 col-sm-9 col-md-7">
-                                    <div class="field-content"><p>
-                                            <strong>Путешествие по Северной Европе в арендованном кемпере - уникальный опыт.
-                                                Почувствуйте &nbsp;на своей коже бриз чистого воздуха, полюбуйтесь
-                                                удивительным Северным сиянием и в полной мере воспользуйтесь правом
-                                                припарковать ваш кемпер в уголке нетронутой природы. Вот лишь некоторые
-                                                идеи проведения неповторимого отдыха.</strong></p>
-                                    </div>
-                                </div>
-                                <div class="views-field views-field-nothing col-xs-12 col-sm-3 col-md-5 pull-right">
-                                    <span class="field-content">
-
-                                        <a href="#routes" class="button bw">Best routes</a>
-                                        <a href="#offers" class="button bw">Best offers</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-                <section id="block-system-main" class="block block-system clearfix">
-
-                    <article id="node-70" class="node node-page clearfix" typeof="foaf:Document">
-                        <header>
-                            <span property="dc:title" content="ИДЕИ ДЛЯ ОТДЫXА" class="rdf-meta element-hidden"></span>
-                            <span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
-                        </header>
-                        <div class="field field-name-body field-type-text-with-summary field-label-hidden container">
-                            <div class="field-items"><div class="field-item even" property="content:encoded"></div></div>
-                        </div>
-                    </article>
-
-                </section>
-                <section id="block-block-9" class="block block-block views-list-title text-center clearfix">
-
-                    <h2><a class="anchor" href="#" id="routes" name="routes" title="Best routes">#</a>
-                        РЕКОМЕНДОВАННЫЕ МАРШРУТЫ</h2>
-                    <h3>ПРОСМОТРИТЕ ВЕЛИКОЛЕПНЫЕ МАРШРУТЫ</h3>
-
-                </section>
-                <section id="block-views-routes-block-2" class="block block-views container routes clearfix">
-
-
-                    <div class="view view-routes view-id-routes view-display-id-block_2 view-dom-id-a793ac3495c7de2df100bd30beeeb270">
-
-                        <div class="view-content">
-                            <div class="views-row views-row-1 views-row-odd views-row-first col-xs-12 col-sm-6 col-md-4" >
-
-                                <div class="views-field views-field-field-background-image">
-                                    <div class="field-content">
-                                        <img class="adaptive-image img-responsive" typeof="foaf:Image"
-                                             src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/scotland-1761292_1920_0.jpg?itok=gw2jAJqu" alt=""></div>  </div>
-                                <div class="views-field views-field-field-keywords">
-                                    <div class="field-content">latvia / Estonia</div>
-                                </div>
-                                <div class="views-field views-field-field-category-title">
-                                    <div class="field-content">The Baltic route from Riga to Tallinn</div>
-                                </div>
-                                <div class="views-field views-field-path">
-                                    <span class="field-content"><a href="/ru/riga-tallin-motorhome">&nbsp;</a></span>
-                                </div>
-                            </div>
-                            <div class="views-row views-row-2 views-row-even col-xs-12 col-sm-6 col-md-4" >
-
-                                <div class="views-field views-field-field-background-image">
-                                    <div class="field-content">
-                                        <img class="adaptive-image img-responsive" typeof="foaf:Image"
-                                             src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/krakow-1526667_1920_0.jpg?itok=S9hGH4e9" alt=""></div>  </div>
-                                <div class="views-field views-field-field-keywords">
-                                    <div class="field-content"></div>  </div>
-                                <div class="views-field views-field-field-category-title">        <div class="field-content">Camper holiday in Krakow</div>  </div>
-                                <div class="views-field views-field-path">        <span class="field-content"><a href="/ru/holiday-ideas/camper-holiday-krakow">&nbsp;</a></span>  </div>  </div>
-                            <div class="views-row views-row-3 views-row-odd col-xs-12 col-sm-6 col-md-4" style="position: absolute; left: 760px; top: 0px;">
-
-                                <div class="views-field views-field-field-background-image">        <div class="field-content"><img class="adaptive-image img-responsive" typeof="foaf:Image" src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/warsaw-996626_1920_0.jpg?itok=D3o_Za6v" alt=""></div>  </div>
-                                <div class="views-field views-field-field-keywords">        <div class="field-content"></div>  </div>
-                                <div class="views-field views-field-field-category-title">        <div class="field-content">Camper vacation in Warsaw</div>  </div>
-                                <div class="views-field views-field-path">        <span class="field-content"><a href="/ru/holiday-ideas/camper-vacation-warsaw">&nbsp;</a></span>  </div>  </div>
-                            <div class="views-row views-row-4 views-row-even col-xs-12 col-sm-6 col-md-4" style="position: absolute; left: 0px; top: 380px;">
-
-                                <div class="views-field views-field-field-background-image">        <div class="field-content"><img class="adaptive-image img-responsive" typeof="foaf:Image" src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/funfair-2369937_1920_0.jpg?itok=nAXE0JfI" alt=""></div>  </div>
-                                <div class="views-field views-field-field-keywords">        <div class="field-content"></div>  </div>
-                                <div class="views-field views-field-field-category-title">        <div class="field-content">Fun Family Camper Rental in Poland</div>  </div>
-                                <div class="views-field views-field-path">        <span class="field-content"><a href="/ru/holiday-ideas/family-route-poland">&nbsp;</a></span>  </div>  </div>
-                            <div class="views-row views-row-5 views-row-odd col-xs-12 col-sm-6 col-md-4" style="position: absolute; left: 380px; top: 380px;">
-
-                                <div class="views-field views-field-field-background-image">        <div class="field-content"><img class="adaptive-image img-responsive" typeof="foaf:Image" src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/castle-2535974_1920_0.jpg?itok=rUDxaMfv" alt=""></div>  </div>
-                                <div class="views-field views-field-field-keywords">        <div class="field-content"></div>  </div>
-                                <div class="views-field views-field-field-category-title">        <div class="field-content">Motorhome roadtrip in Poland </div>  </div>
-                                <div class="views-field views-field-path">        <span class="field-content"><a href="/ru/holiday-ideas/motorhome-roadtrip-poland">&nbsp;</a></span>  </div>  </div>
-                            <div class="views-row views-row-6 views-row-even col-xs-12 col-sm-6 col-md-4" style="position: absolute; left: 760px; top: 380px;">
-
-                                <div class="views-field views-field-field-background-image">        <div class="field-content"><img class="adaptive-image img-responsive" typeof="foaf:Image" src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/latvia-1944777_1920_0.jpg?itok=ZdHDc_l3" alt=""></div>  </div>
-                                <div class="views-field views-field-field-keywords">        <div class="field-content">latvia</div>  </div>
-                                <div class="views-field views-field-field-category-title">        <div class="field-content">Motorhome rental in versatile Latvia</div>  </div>
-                                <div class="views-field views-field-path">        <span class="field-content"><a href="/ru/holiday-ideas/motorhome-rental-latvia">&nbsp;</a></span>  </div>  </div>
-                            <div class="views-row views-row-7 views-row-odd col-xs-12 col-sm-6 col-md-4" style="position: absolute; left: 0px; top: 760px;">
-
-                                <div class="views-field views-field-field-background-image">        <div class="field-content"><img class="adaptive-image img-responsive" typeof="foaf:Image" src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/scotland-1761292_1920_0.jpg?itok=gw2jAJqu" alt=""></div>  </div>
-                                <div class="views-field views-field-field-keywords">        <div class="field-content">England</div>  </div>
-                                <div class="views-field views-field-field-category-title">        <div class="field-content">The Unique Scotland</div>  </div>
-                                <div class="views-field views-field-path">        <span class="field-content"><a href="/ru/holiday-ideas/camper-rental-scotland">&nbsp;</a></span>  </div>  </div>
-                            <div class="views-row views-row-8 views-row-even col-xs-12 col-sm-6 col-md-4" style="position: absolute; left: 380px; top: 760px;">
-
-                                <div class="views-field views-field-field-background-image">        <div class="field-content"><img class="adaptive-image img-responsive" typeof="foaf:Image" src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/port-106908_1280.jpg?itok=or13oebw" alt=""></div>  </div>
-                                <div class="views-field views-field-field-keywords">        <div class="field-content">Spain</div>  </div>
-                                <div class="views-field views-field-field-category-title">        <div class="field-content">The Charming Northern Spain</div>  </div>
-                                <div class="views-field views-field-path">        <span class="field-content"><a href="/ru/holiday-ideas/charming-northern-spain">&nbsp;</a></span>  </div>  </div>
-                            <div class="views-row views-row-9 views-row-odd views-row-last col-xs-12 col-sm-6 col-md-4" style="position: absolute; left: 760px; top: 760px;">
-
-                                <div class="views-field views-field-field-background-image">        <div class="field-content"><img class="adaptive-image img-responsive" typeof="foaf:Image" src="http://www.touringcars.eu/sites/default/files/styles/800x800/adaptive-image/public/background/skyscrapers-2935040_1920_0.jpg?itok=_vADYuwc" alt=""></div>  </div>
-                                <div class="views-field views-field-field-keywords">        <div class="field-content">latvia / riga</div>  </div>
-                                <div class="views-field views-field-field-category-title">        <div class="field-content">Latvia: The Cultural Riga</div>  </div>
-                                <div class="views-field views-field-path">        <span class="field-content"><a href="/ru/holiday-ideas/cultural-city-riga">&nbsp;</a></span>  </div>  </div>
-                        </div>
-
-
-
-
-
-
-                    </div>
-                </section>
-                <section id="block-block-8" class="block block-block views-list-title text-center clearfix">
-
-
-                    <h2><a class="anchor" href="#" id="offers" name="offers" title="Best offers">#</a>ЛУЧШИЕ ПРЕДЛОЖЕНИЯ</h2>
-                    <h3>ПРОСМОТРИТЕ СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</h3>
-
-                </section>
             </div>
-        </section>
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul id="filters" class="post-filter-controls">
 
+                        <li class="filter" data-filter=".filtr-item"> <span class="active">Все достопримечательности </span> </li>
+                        <li class="filter" data-filter=".19"><span>Заповедники</span></li>
+                        <li class="filter" data-filter=".12"><span>Культура</span></li>
+                        <li class="filter" data-filter=".5"><span>Озера</span></li>
+                        <li class="filter" data-filter=".11"><span>Ущелья</span></li>
+                    </ul>
+                    <div class="filtr-container" id="tourlist" style="position: relative; height: 1034.95px;">
+                        <ul class="wp-travel-itinerary-list">
+                            <div class="col-md-4 col-sm-6 col-xs-12 filtr-item 36 11 14" style="position: absolute; left: 0px; top: 0px;">		<div class="post-item-wrapper">
+                                    <a href="https://too.kg/ala-archa/">
+                                        <div class="post-thumb">
 
-    </div>
+                                            <img width="600" height="400" src="https://too.kg/wp-content/uploads/Ala-archa1-600x400.jpg" class="attachment-medium size-medium wp-post-image" alt="Ущелье Ала-Арча" title="Ущелье Ала-Арча">
+                                        </div>
+                                        <span class="effect"></span>
+                                        <div class="post-content">
+                                            <h4 class="post-title">Ущелье Ала-Арча</h4>
+                                            <div class="read-more-link">Читать далее</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div><div class="col-md-4 col-sm-6 col-xs-12 filtr-item 16 35 11" style="position: absolute; left: 379px; top: 0px;">		<div class="post-item-wrapper">
+                                    <a href="https://too.kg/dzhety-oguz/">
+                                        <div class="post-thumb">
+
+                                            <img width="600" height="400" src="https://too.kg/wp-content/uploads/Jeti-oguz-1-e1519302818309-600x400.jpg" class="attachment-medium size-medium wp-post-image" alt="Ущелье Джеты-Огуз" title="Ущелье Джеты-Огуз">
+                                        </div>
+                                        <span class="effect"></span>
+                                        <div class="post-content">
+                                            <h4 class="post-title">Ущелье Джеты-Огуз</h4>
+                                            <div class="read-more-link">Читать далее</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div><div class="col-md-4 col-sm-6 col-xs-12 filtr-item 16 35 5" style="position: absolute; left: 759px; top: 0px;">		<div class="post-item-wrapper">
+                                    <a href="https://too.kg/ala-kul/">
+                                        <div class="post-thumb">
+
+                                            <img width="600" height="400" src="https://too.kg/wp-content/uploads/Ala-kul-e1522147092143-600x400.jpg" class="attachment-medium size-medium wp-post-image" alt="Озеро Ала-Куль" title="Озеро Ала-Куль">
+                                        </div>
+                                        <span class="effect"></span>
+                                        <div class="post-content">
+                                            <h4 class="post-title">Озеро Ала-Куль</h4>
+                                            <div class="read-more-link">Читать далее</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div><div class="col-md-4 col-sm-6 col-xs-12 filtr-item 12 17" style="position: absolute; left: 0px; top: 344px;">		<div class="post-item-wrapper">
+                                    <a href="https://too.kg/tash-rabat/">
+                                        <div class="post-thumb">
+
+                                            <img width="600" height="400" src="https://too.kg/wp-content/uploads/image_8-600x400.jpg" class="attachment-medium size-medium wp-post-image" alt="Караван-сарай Таш-Рабат" title="Караван-сарай Таш-Рабат">
+                                        </div>
+                                        <span class="effect"></span>
+                                        <div class="post-content">
+                                            <h4 class="post-title">Караван-сарай Таш-Рабат</h4>
+                                            <div class="read-more-link">Читать далее</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div><div class="col-md-4 col-sm-6 col-xs-12 filtr-item 12 14" style="position: absolute; left: 379px; top: 344px;">		<div class="post-item-wrapper">
+                                    <a href="https://too.kg/burana/">
+                                        <div class="post-thumb">
+
+                                            <img width="600" height="400" src="https://too.kg/wp-content/uploads/Burana-600x400.jpg" class="attachment-medium size-medium wp-post-image" alt="Башня Бурана" title="Башня Бурана">
+                                        </div>
+                                        <span class="effect"></span>
+                                        <div class="post-content">
+                                            <h4 class="post-title">Башня Бурана</h4>
+                                            <div class="read-more-link">Читать далее</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div><div class="col-md-4 col-sm-6 col-xs-12 filtr-item 17 5" style="position: absolute; left: 759px; top: 344px;">		<div class="post-item-wrapper">
+                                    <a href="https://too.kg/kel-suu/">
+                                        <div class="post-thumb">
+
+                                            <img width="600" height="400" src="https://too.kg/wp-content/uploads/Kel-Suu-e1519301410170-600x400.jpg" class="attachment-medium size-medium wp-post-image" alt="Озеро Кель-Суу" title="Озеро Кель-Суу">
+                                        </div>
+                                        <span class="effect"></span>
+                                        <div class="post-content">
+                                            <h4 class="post-title">Озеро Кель-Суу</h4>
+                                            <div class="read-more-link">Читать далее</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div><div class="col-md-4 col-sm-6 col-xs-12 filtr-item 18 19 5" style="position: absolute; left: 0px; top: 689px;">		<div class="post-item-wrapper">
+                                    <a href="https://too.kg/sary-chelek/">
+                                        <div class="post-thumb">
+
+                                            <img width="600" height="400" src="https://too.kg/wp-content/uploads/f24d4e54c975654d3ddb85e406ada583-e1516698219626-600x400.jpg" class="attachment-medium size-medium wp-post-image" alt="Озеро Сары-Челек" title="Озеро Сары-Челек">
+                                        </div>
+                                        <span class="effect"></span>
+                                        <div class="post-content">
+                                            <h4 class="post-title">Озеро Сары-Челек</h4>
+                                            <div class="read-more-link">Читать далее</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div><div class="col-md-4 col-sm-6 col-xs-12 filtr-item 17 5" style="position: absolute; left: 379px; top: 689px;">		<div class="post-item-wrapper">
+                                    <a href="https://too.kg/son-kul/">
+                                        <div class="post-thumb">
+
+                                            <img width="600" height="400" src="https://too.kg/wp-content/uploads/skl-600x400.jpg" class="attachment-medium size-medium wp-post-image" alt="Озеро Сон-Куль" title="Озеро Сон-Куль">
+                                        </div>
+                                        <span class="effect"></span>
+                                        <div class="post-content">
+                                            <h4 class="post-title">Озеро Сон-Куль</h4>
+                                            <div class="read-more-link">Читать далее</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div><div class="col-md-4 col-sm-6 col-xs-12 filtr-item 18 19" style="position: absolute; left: 759px; top: 689px;">		<div class="post-item-wrapper">
+                                    <a href="https://too.kg/arslanbob/">
+                                        <div class="post-thumb">
+
+                                            <img width="600" height="400" src="https://too.kg/wp-content/uploads/lesa_arsl-e1516691124745-600x400.jpg" class="attachment-medium size-medium wp-post-image" alt="Лес Арсланбоб" title="Лес Арсланбоб">
+                                        </div>
+                                        <span class="effect"></span>
+                                        <div class="post-content">
+                                            <h4 class="post-title">Лес Арсланбоб</h4>
+                                            <div class="read-more-link">Читать далее</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>						</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
+
+
+
+
+
+
+
 
 
 
